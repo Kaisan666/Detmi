@@ -26,6 +26,9 @@ a{
     font-family: 'Inter' , sans-serif;
     font-size: 25px;
     font-weight: 500px;
+    background-color: #F0F4FF; /* Цвет фона  */
+
+  
   }
   .header__inner {
     padding-top: 40px;
@@ -47,9 +50,9 @@ a{
   .logo__img {
     width: 330px; /* Ширина изображения */
 }
-.logo__img{
+/*.logo__img{
   padding-right: ;
-}
+}*/
 /* .user{
   position: absolute;
 left: 1800px;
