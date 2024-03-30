@@ -42,14 +42,11 @@ body{
   width: 200px;
 }
 .logo__footer{
-  display: flex;
-  justify-content: center;
-  padding-right: 80px;
+text-align: center;
 }
 .footer__text{
-  display: flex;
-justify-content: center;
-padding-right: 100px;
+text-align: center;
+/* padding-right: 50px; */
 font-size: 12px;
 padding-bottom: 20px;
 }
@@ -71,4 +68,12 @@ html, body{
 }
 .main{
   flex-grow: 1;
+}
+
+.introduce{
+  text-align: center;
+}
+.title{
+  padding-bottom: 172px;
+  font-size: 36px;
 }
