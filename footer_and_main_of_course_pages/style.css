@@ -1,4 +1,4 @@
-html{
+  html{
     box-sizing: border-box;
   }
   
@@ -73,7 +73,27 @@ html, body{
 .introduce{
   text-align: center;
 }
-.title{
-  padding-bottom: 172px;
+.introduce__title{
+  padding-bottom: 75px;
   font-size: 36px;
+}
+.introduce__item{
+  background-color: rgba(147, 222, 147, 0.2);
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.introduce__item-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.introduce__text{
+  max-width: 1000px;
+  margin: auto 0;
+}
+.introduce__text-1-img{
+  width: 125px;
+  height: 125px;
 }
