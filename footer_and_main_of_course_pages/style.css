@@ -77,7 +77,7 @@ html, body{
   padding-bottom: 75px;
   font-size: 36px;
 }
-.introduce__item{
+.introduce__item-1{
   background-color: rgba(147, 222, 147, 0.2);
   max-width: 1500px;
   margin: 0 auto;
@@ -89,11 +89,25 @@ html, body{
   padding-right: 25px;
   padding-left: 25px;
 }
-.introduce__text{
+.introduce__text-1{
   max-width: 1000px;
   margin: auto 0;
 }
 .introduce__text-1-img{
   width: 125px;
   height: 125px;
+}
+.introduce__item-2{
+  background-color: rgba(147, 222, 147, 0.2);
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.introduce__text-2{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.course-plan__text{
+  margin-top: 50px;
+  text-align: center;
 }
