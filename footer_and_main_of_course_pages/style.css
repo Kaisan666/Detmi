@@ -102,12 +102,34 @@ html, body{
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 100px;
+  /* padding-top: 100px; */
 }
 .introduce__text-2{
   padding-top: 25px;
   padding-bottom: 25px;
 }
 .course-plan__text{
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding-top: 50px ;
   text-align: center;
+  padding-bottom: 50px;
+}
+.course-plan__list-item + .course-plan__list-item{
+  padding-top: 20px;
+  
+}
+.course-plan__list-item{
+  padding-left: 25px;
+}
+.course-plan__list-wrapper{
+  /* padding-left: 25px; */
+  /* width: 1000px; */
+  background-color: rgba(243, 243, 243, 0.74);
+  margin: 0 25%;
+}
+.line{
+  padding: 0 auto;
+  /* max-width: 941.5px; */
+  height: 1px;
+  background-color: rgb(129, 129, 129);
 }
