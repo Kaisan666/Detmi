@@ -1,0 +1,39 @@
+  
+  .header__inner {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(176,139,236,0.36);
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+}
+
+  .menu__list{
+    display: flex;
+    gap: 300px; /*расстояние от слов (друг от друга)*/
+    padding-right: 50px;
+
+  }
+  .menu__list-link {
+    color: #000;
+
+  }
+  .logo__img {
+    width: 330px; /* Ширина изображения */
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 15px;
+}
+.user__img{
+  width: 50px;
+}
+
+
+
+
+
+
