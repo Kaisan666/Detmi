@@ -29,6 +29,7 @@ body{
 }
 .header{
   background: rgba(176,139,236,0.36);
+  margin-bottom: 25px;
   /* padding: 0 10px; */
 }
 .header__inner {
@@ -169,8 +170,14 @@ html, body{
   margin: 0 25%;
 }
 .line{
-  padding: 0 auto;
+  padding: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   /* max-width: 941.5px; */
   height: 1px;
   background-color: rgb(129, 129, 129);
+}
+
+.wrapper{
+  background-image: image(src);
 }
