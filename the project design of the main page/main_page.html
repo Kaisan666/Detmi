@@ -60,6 +60,14 @@
                         Узнать подробнее
                     </a>
             </div>
+            <script>
+                document.querySelector('.section_1_item-3').addEventListener('click', function() {
+                    window.scrollBy({
+                        top: 5 * window.innerHeight / 4, // Скроллируем на 5% высоты окна браузера
+                        behavior: 'smooth' // Делаем скролл плавным
+                    });
+                });
+                </script>
             <div class="top__img-wrapper">
             <img src="images/programmer.png" alt="" class="top__img">
             </div>
