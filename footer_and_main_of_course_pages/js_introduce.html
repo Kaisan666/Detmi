@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="js_introduce.css" />
   </head>
   <body>
     
@@ -43,18 +43,15 @@
     </header>
     <div class="width-wrapper">
       <main class="main">
-        <section class="introduce">
+        <section class="introduce" id="introduce">
           <div class="container">
-            <h1 class="introduce__title">Курс по Python</h1>
+            <h1 class="introduce__title">Курс по Javascript</h1>
                 <div class="introduce__wrapper">
             <div class="introduce__item-1">
               <h3 class="introduce__mini-p">Что вас ждет?</h3>
               <div class="introduce__item-wrapper">
                 <p class="introduce__text-1">
-                  Данный курс является вводным по языку Python, в нем
-                  рассматриваются базовые структуры, после него у вас будет
-                  сильная база по языку. После каждой темы идут практические
-                  задания.
+                  Данный базовый курс повествует об основных средствах языка C++. Особое внимание уделяется обсуждению базовых принципов работы программ, а также процессу их компиляции. Курс далеко не исчерпывающий и покрывает лишь небольшую часть стандарта языка C++, однако мы постарались рассказать о наиболее важных возможностях этого языка.
                 </p>
                 <img class="introduce__item-img" src="images/python.png" alt=""/>
               </div>
@@ -215,8 +212,38 @@
                   <div class="line"></div>
 
                 </div>
-                <aside class="aside-right">
-                  <div class="aside-right__">dadsa  </div>
+                <aside class="aside-right" id="asidee">
+                  <div class="aside-stiky-wrapper">
+                    <div class="button__wrapper">
+                      <a href="#" class=" button__link">
+                      <button class="button__link-to-course" type="button" id="button__course">
+                      Записаться!
+                    </button>
+                    </a>
+                        
+                    </div>
+                    
+                  
+                  <div class="aside-right__main"> 
+                    <h4 class="aside-right__title">В данном курсе:</h4>
+                    <ul class="aside-right__list">
+                      <li class="aside-right__list-item">
+                        100500 уроков
+                      </li>
+                      <li class="aside-right__list-item">
+                        Миллион тестов
+                      </li>
+                      <li class="aside-right__list-item">
+                        Тысяси задач
+                      </li>
+                    </ul>
+                    <span class="aside-right__bottom1">
+                      Примерного время прохождения курса
+                    </span>
+                    <span class="aside-right__bottom2"> 50 часов</span>
+                  </div>
+                </div>
+              </div>
                 </aside>
             </div>
           </div>
@@ -276,5 +303,7 @@
       </div>
       </footer>
     </div>
+
+    <!-- <script src="../index.js"></script> -->
   </body>
 </html>
