@@ -62,20 +62,8 @@ html{
     width: 50px;
   }
 
-  .video-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  max-width: 100%;
-  height: auto;
-  margin-left: 462px;
-}
+
+
 .submenu {
     display: none; /* Сначала скрываем список */
     position: absolute;
@@ -96,16 +84,8 @@ video {
     text-align: left; /* Выравнивание текста */
     margin-bottom: 15px; /* Отступ между пунктами списка */
   }
-  h1 {
-    text-align: center;
-    color: #000000;
-    font-size: 2em;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
-    margin-left: 436px;
-}
 .footer__inner{
-  padding-top: 200px;
+  /* padding-top: 200px; */
 background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
 }
 .footer__menu{
@@ -167,14 +147,9 @@ font-size: 20px;
   .arrow1{
     width: 63px;
     height: 65px;
-    margin-left: 30px;
-    margin-top: 1px;
+    position: absolute;
   }
-  .container1 {
-    display: flex;
-    max-width: 1980px;
-    margin: 0 auto;
-  }
+
   .top{
     color: #000;
   }
@@ -190,39 +165,24 @@ font-size: 20px;
     padding-top: 10px; 
     
 }
-.video-container {
-  position: relative;
-}
-
-.fon {
+.fon1{
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 200px;
-  margin-left: 1400px;
-  width: 400px;
-  height: 500px;
-  z-index: -1; /* Поместить фон за видео */
+  align-items: end;
 }
-
-.fon__img {
-  display: flex;
-  justify-content: space-between;
-  
+.fon__img{
+  max-width: 360px;
 }
-.fon1 {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 400px;
-  margin-left: 20px;
-  width: 400px;
-  height: 500px;
-  z-index: -1; /* Поместить фон за видео */
+.fon1__img{
+  max-width: 360px;
 }
-
-.fon1__img {
+.video{
+  max-width: 1000px;
+}
+.greetings{
+  text-align: center;
+}
+.content-wrapper{
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: center;
+  margin-bottom: 50px;
 }
