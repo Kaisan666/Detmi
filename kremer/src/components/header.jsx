@@ -1,12 +1,15 @@
-import './header.css'
+import './style_for_main.css'
+// import React from 'react'
+import Logo_img from '../images/Detmi.png';
+import user_img from "../images/user.png"
 
 export default function Header(){
     return(
         <header className="header">
-            <div className="container0"/>
+            <div className="container0">
                 <div className="header__inner">
                     <a href="#" className="logo">
-                        <img className="logo__img" src="images/Detmi.png" alt=""/>
+                        <img className="logo__img" src={Logo_img} alt=""/>
                     </a>
                     
                     <nav className="menu">
@@ -28,8 +31,9 @@ export default function Header(){
                         </ul>
                     </nav>
                     <a href="#"className="user">
-                        <img className="user__img" src="images/user.png" alt=""/>
+                        <img className="user__img" src={user_img} alt=""/>
                     </a>
+                </div>
                 </div>
         </header>
     )
