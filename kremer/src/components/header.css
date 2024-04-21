@@ -1,0 +1,96 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    max-height: 100%;
+  }
+  ul{
+    list-style-type:  none; 
+  }
+     a{
+    text-decoration: none;
+    color: black;
+   }
+  
+    body{
+      font-family: 'Inter' , sans-serif;
+      font-size: 25px;
+      font-weight: 1000px;
+      background-color: #F0F4FF; 
+     
+    }
+  
+    .header__inner {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .header{
+    background: rgba(176,139,236,0.36);
+   
+  }
+  .submenu {
+    display: none; /* Сначала скрываем список */
+    position: absolute;
+    background-color: #ca93e931;
+    border: 1px solid #00000052;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .menu__list-item:hover .submenu {
+    display: none; /* Скрываем выпадающий список по умолчанию */
+  }
+  .submenu li {
+    color: #6e6b6b; /* Цвет текста */
+    font-size: 24px; /* Размер шрифта */
+    font-family: Arial, sans-serif; /* Шрифт */
+    text-align: left; /* Выравнивание текста */
+    margin-bottom: 15px; /* Отступ между пунктами списка */
+  }
+  /*.submenu li:hover {
+    color: #f70000; 
+  }*/
+    .menu__list{
+      display: flex;
+      gap: 300px; 
+      padding-right: 50px;
+  
+    }
+    .menu__list-link {
+      color: #000;
+  
+    }
+    .logo__img {
+      width: 330px; 
+  }
+  
+  .header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 15px;
+  }
+  .user__img{
+    width: 50px;
+  }
+  
+  .container0 {
+    max-width: 1920px;
+    padding: 0 15px;
+  }
+  .container { 
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
