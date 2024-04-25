@@ -1,4 +1,4 @@
-import './style_for_main.css'
+import '../styles/style_for_main.css'
 // import React from 'react'
 import Logo_img from '../images/Detmi.png';
 import user_img from "../images/user.png"

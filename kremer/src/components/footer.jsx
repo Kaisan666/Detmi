@@ -1,4 +1,4 @@
-import './style_for_main.css'
+import '../styles/style_for_main.css'
 
 import logo_img from "../images/Detmi.png"
 import tg_img from "../images/qrcodetg.png"

@@ -1,3 +1,80 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+
+
 html{
   box-sizing: border-box;
 }
@@ -20,13 +97,17 @@ ul{
  }
 
   body{
-    font-family: 'Inter' , sans-serif;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 400;
     font-size: 25px;
     font-weight: 1000px;
     background-color: #F0F4FF; 
    
   }
-
+.width-wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
   .header__inner {
     padding-top: 10px;
     display: flex;
@@ -54,7 +135,7 @@ ul{
 .submenu li {
   color: #6e6b6b; /* Цвет текста */
   font-size: 24px; /* Размер шрифта */
-  font-family: Arial, sans-serif; /* Шрифт */
+  font-family: "Roboto", sans-serif; /* Шрифт */
   text-align: left; /* Выравнивание текста */
   margin-bottom: 15px; /* Отступ между пунктами списка */
 }
@@ -211,8 +292,8 @@ max-width: 1440px;
 
 }
 .top__img {
-  width: 934px;
-  height: 638px;
+  width: 450px;
+  height: 450px;
   margin-left: 0px;
   margin-top: 30px;
 }
@@ -519,7 +600,7 @@ text-align: center;
 /* padding-right: 50px; */
 font-size: 12px;
 padding-bottom: 20px;
-margin-right: 75px;
+margin-right: 30px;
 }
 .footer__menu-link:hover{
 color: azure  ;
