@@ -2,6 +2,9 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import "../styles/style_for_main.css"
 import Programmer_img from "../images/programmer.png"
+import Languages_img from "../images/languages.png"
+import top2_img from "../images/4.png"
+
 function MainPage() {
     return (
     <div>
@@ -20,16 +23,21 @@ function MainPage() {
                         </h1>
                     </div>
                    
+                        <div className="section_1_item-2-wrapper">
+                            <img src={Languages_img} alt="" className="languages_img"/>
                     <div className="section_1_item-2">
-                        <h2 className="section_1_text-2">
-                            Здесь вы найдете все, что нужно для того, чтобы стать профессионалом в мире технологий.
-                            Мы предлагаем обучение с нуля для новичков и углубленную программу для тех,
-                            кто уже имеет опыт в программировании.
-                        </h2>
+                            <h2 className="section_1_text-2">
+                                Здесь вы найдете все, что нужно для того, чтобы стать профессионалом в мире технологий.
+                                Мы предлагаем обучение с нуля для новичков и углубленную программу для тех,
+                                кто уже имеет опыт в программировании.
+                            </h2>
+                        </div>
                     </div>
-                    <a className="section_1_item-3" href="#">
-                        Узнать подробнее
-                    </a>
+                    <div className="section_1_item-3">
+                        <a className="section_1_item-3_link" href="#">
+                            Узнать подробнее
+                        </a>
+                    </div>
             </div>
             
             <div className="top__img-wrapper">
@@ -42,10 +50,12 @@ function MainPage() {
             <div className="container">
                 <div className="top2__wrapper">
                         <div className="section_2_item-1">
-                            <h3 className="section_2_item_1">
-                                НАШИ КУРСЫ
-                            </h3>
-                              <img src="images/4.png" alt="" className="top1__img"/>
+                            <div className="section_2_item_1_img">
+                                <h3 className="section_2_item_1">
+                                    НАШИ КУРСЫ
+                                </h3>
+                                  <img src={top2_img} alt="" className="top1__img"/>
+                            </div>
                         </div>
                         <div className="help">
                         <div className="box1">
