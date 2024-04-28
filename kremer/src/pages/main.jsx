@@ -4,12 +4,16 @@ import "../styles/style_for_main.css"
 import Programmer_img from "../images/programmer.png"
 import Languages_img from "../images/languages.png"
 import top2_img from "../images/4.png"
-
+import Languages_img2 from "../images/7.png"
+import Some_img3 from "../images/3.png"
+import Some_img2 from "../images/2.png"
+import Some_img1 from "../images/1.png"
+import Some_img4 from "../images/8.png"
 function MainPage() {
     return (
     <div>
         <Header/>
-        <div>
+        <div className="background">
         <div className="width-wrapper"> 
         <main className="main">
          <section className="top">
@@ -76,15 +80,17 @@ function MainPage() {
             <div className=" container3">
                 <div className="top3__wrapper">
                     <div className="kek">
-                        <div className="section_3_item-1">
-                            <h4 className="section_3_item_1">
-                                ЧТО ВАС ЖДЕТ?
-                            </h4>
+                        <div className="section_3_item-1-wrapper">
+                            <div className="section_3_item-1">
+                                <h4 className="section_3_item_1">
+                                    ЧТО ВАС ЖДЕТ?
+                                </h4>
+                                <img src={Languages_img2} alt="" className="top7__img"/>
+                            </div>
                         </div>
                 </div>
                     <div className="container3">
                         <div className="top2__img-wrapper">
-                            <img src="images/7.png" alt="" className="top7__img"/>
                             </div>
                        <div className="box4">
                             <div className="text">Интерейснейшие курсы по языкам программирования на выбор, на данный момент доступны такие языки как:
@@ -95,15 +101,9 @@ function MainPage() {
                             </div>
                       </div>
                       <div className="container4">
-                      <div className="top2__img-wrapper">
-                        <img src="images/1.png" alt="" className="top4__img"/>
-                     </div>
-                    <div className="top2__img-wrapper">
-                        <img src="images/2.png" alt="" className="top5__img"/>
-                    </div>
-                    <div className="top2__img-wrapper">
-                        <img src="images/3.png" alt="" className="top6__img"/>
-                    </div>
+                        <img src={Some_img1} alt="" className="top4__img"/>
+                        <img src={Some_img2} alt="" className="top5__img"/>
+                        <img src={Some_img3} alt="" className="top6__img"/>
                     </div>
                     </div>
                     </div>
@@ -120,12 +120,12 @@ function MainPage() {
                                 </h5>
                             </div>
                             <div className="container6">
-                                <img src="images/8.png" alt="" className="top8__img"/>
+                                <img src={Some_img4} alt="" className="top8__img"/>
                            
                             <div className="box5">
                                 <div className="text">
-                                    <strong><p>Раздел “Задачи” - Ваш путь к успеху!</p></strong>
-                                    <h2>В разделе “Задачи” будут две категории, “обычный” и “соревновательный”.
+                                    <p className="box5_par">Раздел “Задачи” - Ваш путь к успеху!</p>
+                                    <h2 className="box5_text">В разделе “Задачи” будут две категории, “обычный” и “соревновательный”.
                                     Вас ждут три уровня сложности - легкий, средний и жесткий!
                                     Здесь вы сможете прокачать свой навык, решая множество интересных и разнообразных задач,
                                     а также получить рейтинг, тем самым став лучшим в таблице лидеров, заняв первое место!</h2>
@@ -147,26 +147,33 @@ function MainPage() {
                             </div>
                         </div>
                         <div className="container7">
-                            <div className="box6">
-                                <div className="text">В таблицу лидеров курса попадают только те, 
-                                    кто набрал большее количество рейтинга. </div>
+                            <div className="firstboth">
+                                <div className="box6">
+                                    <div className="text">В таблицу лидеров курса попадают только те, 
+                                        кто набрал большее количество рейтинга </div>
+                                        </div>
+                                <div className="box7">
+                                    <div className="text">Задачи могут быть самыми разными 
+                                        - от простых до сложных</div>
+                                </div>
                             </div>
-                            <div className="box7">
-                                <div className="text">Задачи могут быть самыми разными 
-                                    - от простых до сложных</div>
+                            
+                            <div className="secondboth">
+                                <div className="box8">
+                                    <div className="text">Каждый участник курса имеет шанс занять первое место в этой таблице. 
+                                        Это стимул для всех , 
+                                        ведь победа в таблице лидеров означает признание их мастерства и знаний</div>
+                                </div>
+                                <div className="box9">
+                                    <div className="text">Но именно преодоление этих испытаний позволяет участникам 
+                                        продемонстрировать свое мастерство и стать лидером</div>
+                                </div>
                             </div>
-                            <div className="box8">
-                                <div className="text">Каждый участник курса имеет шанс занять первое место в этой таблице. 
-                                    Это стимул для всех , 
-                                    ведь победа в таблице лидеров означает признание их мастерства и знаний.</div>
-                            </div>
-                            <div className="box9">
-                                <div className="text">Но именно преодоление этих испытаний позволяет участникам 
-                                    продемонстрировать свое мастерство и стать лидером.</div>
-                            </div>
-                            <div className="box10">
-                                <div className="text">Чтобы достичь вершины, вам придется приложить немало усилий
-                                     и потратить немало времени на решение разнообразных задач.</div>
+                            <div className="box10-wrapper">
+                                <div className="box10">
+                                    <div className="text">Чтобы достичь вершины, вам придется приложить немало усилий
+                                         и потратить немало времени на решение разнообразных задач.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
