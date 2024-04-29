@@ -1,24 +1,20 @@
-
-import User2_img from "../images/user2.png"
-import Detmi_img from "../images/Detmi.png"
-import " ../styles/registration.css"
-
-
+//import React from 'react';
+import "../styles/registration.css"; // Импорт файла со стилями
+import User1_img from "../images/user1.png";
+import Detmi_img from "../images/Detmi.png";
 
 function Registration() {
     return (
         <div>
-            <a href="#" className="user2">
-                <img src={User2_img} alt="" className="user2_img" />
-            </a>
             <div className="container">
-                <a href="#" className="user2">
-                    <img src={Detmi_img} alt="" className="Detmi_img" />
+                <a href="#" className="User1">
+                    <img src={User1_img} alt="" className="user1_img" />
                 </a>
                 <div className="register-box">
+                <img src={Detmi_img} alt="" className="Detmi_img" />
                     <h2>Регистрация</h2>
                     <form>
-                        <label htmlFor="username">Имя пользователя:</label>
+                        <label htmlFor="usersname">Имя пользователя:</label>
                         <input type="text" id="username" name="username" required />
 
                         <label htmlFor="email">Email:</label>
@@ -32,6 +28,7 @@ function Registration() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-export default Registration
+
+export default Registration;

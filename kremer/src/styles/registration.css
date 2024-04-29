@@ -1,100 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #d1e6f7ab;
+
+html{
+    box-sizing: border-box;
+  }
+  
+  *, *::after, *::before{
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
+  }
+  
+  html, body {
+    max-height: 100%;
+  }
+  ul{
+    list-style-type:  none; 
+  }
+     a{
+    text-decoration: none;
+    color: black;
+   }
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
-    max-width: 400px;
-    padding: 97px;
+    background-color: #d1e6f791;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.user1_img {
+    width: 849px;
+    margin-left: 0px;
+}
+.Detmi_img{
+    width: 175px;
+    height: 52px;
+    margin-left: 66px;
+    }
+
+.register-box {
+    padding: 70px;
     background-color: #ffffff5e;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .register-box {
-    text-align: center;
-    font-size: 24px;
-  }
-  
- 
-  h2 {
-    color: #a6c6e7;
-    background-image: linear-gradient(90deg, #b6d7fa, #a200ff75, #00d9ff80);
+    border-radius: 55px;
+    box-shadow: 0 8px 9px rgba(146, 210, 235, 0.493), 0 0 10px rgba(146, 177, 235, 0.5), 0 0 15px rgba(220, 146, 235, 0.3);
+    margin-left: 100px;
+}
+
+.register-box h2 {
+
+    font-size: 50px;
+    text-align: center; /* Выравниваем текст по центру */
+    background-image: linear-gradient(90deg, #717bd888, #e6d7f7d3, #c1b8f7d3, #a49ff7d3, #787aebd2, #ffd2f1d3);
     background-size: 200%;
     background-clip: text;
+    -webkit-background-clip: text; /* Для поддержки веб-кит браузеров */
     color: transparent;
-    animation: gradient 2s linear infinite;
-  }
-  
-  @keyframes gradient {
+    animation: gradient 5s linear infinite;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradient {
     0% {
-      background-position: 0%;
+        background-position: 0%;
     }
     100% {
-      background-position: 200%;
+        background-position: 100%;
     }
-  }
-  
-  form {
+}
+
+
+.register-box form {
     display: flex;
     flex-direction: column;
-  }
-  
-  label {
-    margin-top: 10px;
-    color: #333;
-  }
-  
-  input, button {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px; 
-  }
-  
-  input {
-    width: calc(100% - 22px); 
-  }
-  
-  button {
-    width: calc(100% - 22px); 
-  }
-  
-  button {
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    width: 300px; /* Устанавливаем ширину формы */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+    padding: 20px; /* Добавляем отступы вокруг формы */
+    border-radius: 5px; /* Закругляем углы рамки */
+    font-size: 24px;
+}
+
+
+.register-box label {
+    margin-top: 40px;
+}
+
+.register-box input {
+    display: flex;
+    padding: 12px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border: 1px solid #cacaca75;
+    border-radius: 15px;
+    margin-left: 10px;
+    width: 100%
+}
+
+#registerButton {
     padding: 20px;
     margin-top: 27px;
-    background-color: #2a8ec9;
+    background-color: #b5dcf3;
     color: #ffffff;
     border: none;
     border-radius: 100px;
     cursor: pointer;
     margin-left: 9px;
-    background-image: linear-gradient(90deg,  #b6d7fa, #a200ff75, #00d9ff80);
+    background-image: linear-gradient(90deg, #b6d7fa, #cc95ec75, #9edbe680);
     font-size: 24px;
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 200%;
-    }
-  }
-  
-  button:hover {
-    background-color: #c275cc;
-  }
-  .logo{
-    margin-left: 25px;
-    height: 62px;
-    width: 218px;
-  }
-  .user2{
-    margin: 10px;
-  }
+    font-family: 'Roboto', sans-serif;
+}
+
+#registerButton:hover {
+    background-color: #324ec9c7;
+}
