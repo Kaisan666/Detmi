@@ -2,8 +2,8 @@ import React from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
 import "../styles/videocoursePY.css"; // Импорт файла со стилями
-import o_img from "../images/0.png";
-import pc_img from "../images/1.png";
+//import o_img from "../images/0.png";
+//import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
 import python from "../images/python.mp4"
 
@@ -25,7 +25,6 @@ function VideocoursePY() {
                                         <source src={python} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
-                                   
                                 </div>
                                 <div className="step-buttons-container">
                                         <button className="step-button">Шаг назад</button>
