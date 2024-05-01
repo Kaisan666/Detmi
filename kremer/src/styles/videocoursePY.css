@@ -89,7 +89,7 @@ html{
 background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
 }
 .footer__menu{
-  /* margin-top: 100px; */
+  margin-top: 100px;
 display: flex;
 justify-content:center ;
 gap: 300px;
@@ -147,8 +147,8 @@ font-size: 20px;
   .arrow1_img {
     width: 63px;
     height: 65px;
-    position: relative;
-    right: 182px; /* Сдвиг элемента на 182px влево от его нормального положения */
+
+    right: 1px; /* Сдвиг элемента на 182px влево от его нормального положения */
   }
   
   .top{
@@ -169,41 +169,73 @@ font-size: 20px;
     
 }
 .fon1_img {
-  display: flex;
-  align-items: center; /* Change 'end' to 'center' to vertically center the images */
-  justify-content: center; /* Horizontally center the images */
-  margin-top: 20px; /* Add some top margin for spacing */
+  width: 431px;
+  height: 474px;
+  margin-top: 237px;
+  position: relative;
+  right: 20px;
 }
 
 .fon__img {
-  width: 370px;
-  height: 383px;
-  margin-top: 1px;
+  width: 470px;
+  height: 481px;
+  margin-top: 161px;
   position: relative;
   right: 15px;
- 
 }
 
 .fon1__img {
-      width: 309px;
-      height: 362px;
-      margin-top: 153px;
-      position: relative;
-      right: 20px;
+  width: 423px;
+  height: 486px;
+  margin-top: 0px;
+  position: relative;
+  right: 20px;
 
+}
+.greetings {
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+  margin-top: 1px;
+  margin-left: 28px;
 }
 
 .video {
   max-width: 900px;
-  margin: 10px auto; /* Set margin to 'auto' horizontally to center the video */
-  display: block; /* Ensures that the video is displayed as a block element */
+  margin: 30px 0 0 0;
 }
 
-.greetings{
-  text-align: center;
-}
+
 .content-wrapper{
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+.step-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 25px 65px 490px;
+
+}
+
+.step-button {
+  padding: 20px 63px;
+  font-size: 18px;
+  background-color: #7de697;
+  color: white;
+  border: none;
+  border-radius: 107px;
+
+  
+}
+/*.step-button2 {
+  padding: 20px 63px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 107px;
+}*/
+.step-button:hover {
+  background-color: #00b336;
 }

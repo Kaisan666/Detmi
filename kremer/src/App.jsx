@@ -4,13 +4,13 @@ import './App.css'
 // import Footer from './components/footer'
 //import MainPage from './pages/main'
 //import Registration from './pages/registration'
-import Videocourse from './pages/videocourse'
+import VideocoursePY from './pages/videocoursePY'
 function App() {
   // const [count, setCount] = useState(0)y
   return (
     <div>
   
-  <Videocourse/>
+  <VideocoursePY/>
     </div>
   )
 }

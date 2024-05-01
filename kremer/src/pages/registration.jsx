@@ -25,6 +25,8 @@ function Registration() {
 
                         <button type="submit" id="registerButton">Зарегистрироваться</button>
                     </form>
+                    <p className="login-link">Уже зарегистрированы? <a href="/login" className="login-anchor">Войти</a></p>
+                
                 </div>
             </div>
         </div>
