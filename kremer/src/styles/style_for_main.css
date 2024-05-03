@@ -98,7 +98,7 @@ ul{
 
   body{
     font-family: "Roboto" , sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     font-weight: 1000px;
     background-color: #F0F4FF; 
@@ -119,9 +119,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.main{
 
 }
 .header{
@@ -326,7 +323,7 @@ max-width: 1440px;
 .section_2_item_1{
     text-align: center;
     font-size: 48px;
-    margin-top: 5px;
+    margin-top: 25px;
     font-weight: 500;
   
 }
@@ -528,7 +525,7 @@ max-width: 1440px;
   background: #FDD782;
   border-radius: 64px;
   padding: 37px;
-  margin-top: 250px;
+  /* margin-top: 250px; */
   /* height: 314px; */
   /* width: 759px; */
   margin-left: 100px;
