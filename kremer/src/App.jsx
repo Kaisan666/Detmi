@@ -12,13 +12,17 @@ import './App.css'
 //import VideocourseC2 from './pages/videocourseC++2'
 //import VideocourseJS from './pages/videocourseJS'
 //import VideocourseJS1 from './pages/videocourseJS1'
-import VideocourseJS2 from './pages/videocourseJS2'
+//import VideocourseJS2 from './pages/videocourseJS2'
+//import Course_textPY from './pages/course_textPY1'
+//import Course_textPY1 from './pages/course_textPY1'
+//import Course_textC from './pages/course_textC'
+import Course_textC1 from './pages/course_textC1'
 function App() {
   // const [count, setCount] = useState(0)y
   return (
     <div>
   
-  <VideocourseJS2/>
+  <Course_textC1/>
     </div>
   )
 }

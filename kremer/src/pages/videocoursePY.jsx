@@ -20,11 +20,14 @@ function VideocoursePY() {
                                     <img src={arrow1_img} alt="" className="arrow1_img" />
                                 </div>
                                 <h1 className="greetings">ВВЕДЕНИЕ В КУРС</h1>
+                                
                                 <div className="content-wrapper">
+                            
                                     <video controls className="video">
                                         <source src={python} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
+                                    
                                 </div>
                                 <div className="step-buttons-container">
                                         <button className="step-button">Шаг назад</button>

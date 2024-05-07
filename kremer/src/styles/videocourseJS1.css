@@ -210,31 +210,22 @@ font-size: 20px;
   justify-content: center;
   margin-bottom: 50px;
 }
-.step-buttons-container {
+.step-buttons-container{
   display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  margin: 0 25px 65px 490px;
-
+  justify-content: center;
+  margin-bottom: 1px;
 }
-
 .step-button {
   padding: 20px 63px;
   font-size: 18px;
-  background-color: #d6e643;
+  background-color: #ecee62;
   color: white;
   border: none;
   border-radius: 107px;
-
-  
+  margin: 54px;
+  margin-top: 0px;
 }
-/*.step-button2 {
-  padding: 20px 63px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 107px;
-}*/
 .step-button:hover {
-  background-color: #f8f553;
+  background-color: #dadd35;
 }
+

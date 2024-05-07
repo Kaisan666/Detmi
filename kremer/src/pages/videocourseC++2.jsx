@@ -27,8 +27,8 @@ function VideocourseC2() {
                                     </video>
                                 </div>
                                 <div className="step-buttons-container">
-                                        <button className="step-button">Шаг назад</button>
-                                        <button className="step-button">Шаг вперед</button>
+                                        <button className="step-button">назад</button>
+                                        <button className="step-button">вперед</button>
                                     </div>
                             </div>
                         </div>
