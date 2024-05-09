@@ -4,14 +4,17 @@ import Footer from "../components/footerPY";
 import "../styles/course_textPY1.css";
 
 import pdf from "../images/Python1.pdf";
-import programmers_img from "../images/programmers.png";
-//import arrow1_img from "../images/arrow1.png";
+//import programmers_img from "../images/programmers.png";
+import arrow1_img from "../images/arrow1.png";
 
 
 function Course_textPY1() {
     return (
         <div>
             <Header />
+            <div className="button_menu">
+                                    <img src={arrow1_img} alt="" className="arrow1_img" />
+                                </div>
            
               <div className="centered-text">
                  <p><strong>ПЕРЕМЕННЫЕ И ТИПЫ ДАННЫХ PYTHON</strong></p>

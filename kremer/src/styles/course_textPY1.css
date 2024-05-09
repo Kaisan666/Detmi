@@ -208,4 +208,9 @@ font-size: 20px;
   .step-button:hover {
     background-color: #00b336;
   }
-  
+  .arrow1_img {
+    width: 63px;
+    height: 65px;
+
+    right: 1px; /* Сдвиг элемента на 182px влево от его нормального положения */
+  }

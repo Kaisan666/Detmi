@@ -4,13 +4,16 @@ import Footer from "../components/footerPY";
 import "../styles/course_textPY.css";
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
-//import arrow1_img from "../images/arrow1.png";
+import arrow1_img from "../images/arrow1.png";
 
 
 function Course_textPY() {
     return (
         <div>
             <Header />
+            <div className="button_menu">
+                                    <img src={arrow1_img} alt="" className="arrow1_img" />
+                                </div>
               <div className="centered-text">
                  <p><strong>ЧИСЛА И ОПЕРАЦИИ НАД НИМИ</strong></p>
                    <p>
