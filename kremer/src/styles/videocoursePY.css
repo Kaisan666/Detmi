@@ -232,3 +232,62 @@ font-size: 20px;
   background-color: #35ddb37e;
 }
 
+
+
+
+
+.panel-toggle-button {
+    position: flex;
+    top: 137px;
+    width: 252px;
+    left: 0;
+    padding: 30px;
+    background-color: #86f3a1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  top: 173px; /* Высота вашего заголовка (Header) */
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 250px;
+  background-color: #65d3862c;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(80, 218, 126, 0.63); /* Добавляем свечение с помощью box-shadow */
+  transition: left 0.9s ease; /* Анимация для плавного появления */
+}
+
+
+.panel a {
+  z-index: 1;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.panel a:hover {
+  color: #5cdb87e0;
+}
+
+.panel hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+.panel-line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* Цвет линии */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 200px;
+}
+
+

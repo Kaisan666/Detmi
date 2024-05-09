@@ -6,7 +6,7 @@ import './App.css'
 // import Footer from './components/footer'
 //import MainPage from './pages/main'
 //import Registration from './pages/registration'
-//import VideocoursePY from './pages/videocoursePY'
+import VideocoursePY from './pages/videocoursePY'
 //import VideocoursePY1 from './pages/videocoursePY1'
 //import VideocoursePY2 from './pages/videocoursePY2'
 //import VideocourseC from './pages/videocourseC++'
@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
   
-  <Registration/>
+  < VideocoursePY/>
     </div>
 
 

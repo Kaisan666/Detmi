@@ -1,24 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/videocoursePY.css"; // Импорт файла со стилями
-//import o_img from "../images/0.png";
-//import pc_img from "../images/1.png";
-import arrow1_img from "../images/arrow1.png";
-import python from "../images/python.mp4"
+import "../styles/videocoursePY.css"; 
+import python from "../images/python.mp4";
 
 function VideocoursePY() {
+    const [isPanelOpen, setPanelOpen] = useState(false);
+
+    const togglePanel = () => {
+        setPanelOpen(!isPanelOpen);
+    };
+
     return (
         <div>
             <Header />
+            <button onClick={togglePanel} className="panel-toggle-button">
+                {isPanelOpen ? 'Скрыть панель' : 'Показать панель'}
+            </button>
+            
+            {isPanelOpen && (
+    <div className="panel">
+        <a>ВВЕДЕНИЕ В КУРС</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a> Базовые операции в языке Python</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a> Краткая теория</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a> Задачи</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a>Переменные и типы данных Python</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a> Краткая теория</a>
+        <hr /> {/* Горизонтальная линия */}
+        <a> Задачи</a>
+        <hr /> {/* Горизонтальная линия */}
+    </div>
+)}
+
             <main className="main">
+                
+            
                 <section className="top">
                     <div className="container1">
                         <div className="top__wrapper">
                             <div className="zaeb">
-                                <div className="button_menu">
-                                    <img src={arrow1_img} alt="" className="arrow1_img" />
-                                </div>
+                                
                                 <h1 className="greetings">ВВЕДЕНИЕ В КУРС</h1>
                                 
                                 <div className="content-wrapper">
@@ -30,9 +56,9 @@ function VideocoursePY() {
                                     
                                 </div>
                                 <div className="step-buttons-container">
-                                        <button className="step-button">Шаг назад</button>
-                                        <button className="step-button">Шаг вперед</button>
-                                    </div>
+                                    <button className="step-button">Шаг назад</button>
+                                    <button className="step-button">Шаг вперед</button>
+                                </div>
                             </div>
                         </div>
                     </div>
