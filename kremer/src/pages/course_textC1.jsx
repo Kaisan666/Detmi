@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/course_textC1.css";
+import "../styles/course_textC.css";
 
 import pdf from "../images/Python1.pdf";
 //import programmers_img from "../images/programmers.png";

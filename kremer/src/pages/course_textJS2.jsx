@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/course_textJS2.css";
+import "../styles/course_textJS1.css";
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
