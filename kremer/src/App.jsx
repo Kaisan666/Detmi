@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './pages/main';
 
+import './styles/registration.css';
 import Registration from './pages/registration';
 import VideocoursePY from './pages/videocoursePY';
 import VideocoursePY1 from './pages/videocoursePY1';
