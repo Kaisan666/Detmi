@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import "../styles/style_for_main.css"
@@ -9,6 +10,7 @@ import Some_img3 from "../images/3.png"
 import Some_img2 from "../images/2.png"
 import Some_img1 from "../images/1.png"
 import Some_img4 from "../images/8.png"
+
 function MainPage() {
     return (
     <div>

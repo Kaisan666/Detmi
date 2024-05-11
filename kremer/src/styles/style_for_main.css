@@ -256,13 +256,15 @@ max-width: 1440px;
   width: 120px;
   height: 120px;
 }
-.section_1_item-1{
-    background-color: #ff4f5b88;
-    display: flex;
-    border-radius: 50px;
-    padding: 30px;
-    max-width: 750px;
+.section_1_item-1 {
+  background-color: #ff4f5b88;
+  display: flex;
+  border-radius: 50px;
+  padding: 30px;
+  max-width: 750px;
+  scroll-behavior: smooth; /* Добавляем плавный скроллинг */
 }
+
 .section_1_text-1{
   text-align: center;
   font-size: 20px;
@@ -315,6 +317,7 @@ max-width: 1440px;
   max-width: 31.25vw;
   /* height: 450px; */
   align-self: center;
+  top: 100px;
 }
 
 .top__img-wrapper{
@@ -704,3 +707,4 @@ font-size: 20px;
     transform: scale(1.1);
   
   }
+  
