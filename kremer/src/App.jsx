@@ -1,23 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainPage from './pages/main';
+import {lazy} from 'react';
 
-import Registration from './pages/registration';
-import VideocoursePY from './pages/videocoursePY';
-import VideocoursePY1 from './pages/videocoursePY1';
-import VideocoursePY2 from './pages/videocoursePY2';
-import VideocourseC from './pages/videocourseC++';
-import VideocourseC1 from './pages/videocourseC++1';
-import VideocourseC2 from './pages/videocourseC++2';
-import VideocourseJS from './pages/videocourseJS';
-import VideocourseJS1 from './pages/videocourseJS1';
-import VideocourseJS2 from './pages/videocourseJS2';
-import Course_textPY from './pages/course_textPY';
-import Course_textPY1 from './pages/course_textPY1';
-import Course_textC from './pages/course_textC';
-import Course_textC1 from './pages/course_textC1';
-import Course_textJS1 from './pages/course_textJS1';
-import Course_textJS2 from './pages/course_textJS2';
+const MainPage = lazy(() => import('./pages/main'));
+const Registration = lazy(() => import('./pages/registration'));
+const VideocoursePY = lazy(() => import('./pages/videocoursePY'));
+const VideocoursePY1 = lazy(() => import('./pages/videocoursePY1'));
+const VideocoursePY2 = lazy(() => import('./pages/videocoursePY2'));
+const VideocourseC = lazy(() => import('./pages/videocourseC++'));
+const VideocourseC1 = lazy(() => import('./pages/videocourseC++1'));
+const VideocourseC2 = lazy(() => import('./pages/videocourseC++2'));
+const VideocourseJS = lazy(() => import('./pages/videocourseJS'));
+const VideocourseJS1 = lazy(() => import('./pages/videocourseJS1'));
+const VideocourseJS2 = lazy(() => import('./pages/videocourseJS2'));
+const Course_textPY = lazy(() => import('./pages/course_textPY'));
+const Course_textPY1 = lazy(() => import('./pages/course_textPY1'));
+const Course_textC = lazy(() => import('./pages/course_textC'));
+const Course_textC1 = lazy(() => import('./pages/course_textC1'));
+const Course_textJS1 = lazy(() => import('./pages/course_textJS1'));
+const Course_textJS2 = lazy(() => import('./pages/course_textJS2'));
 
 const AppRouter = () => {
   return (
