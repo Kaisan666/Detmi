@@ -125,29 +125,46 @@ ul{
   background: rgba(176,139,236,0.36);
  
 }
-.submenu {
-  display: none; /* Сначала скрываем список */
-  position: absolute;
-  background-color: #ca93e931;
-  border: 1px solid #00000052;
-  padding: 30px;
-  width: 200px;
-  height: 200px;
+
+
+
+
+.menu__list-link {
+  /* Ваши стили для ссылки в меню */
+  /* Например: */
+  color: #000; /* цвет текста */
+  text-decoration: none; /* убрать подчеркивание */
 }
 
+.submenu {
+  /* Стили для всплывающего меню */
+  display: none; /* изначально скрыто */
+  position: absolute;
+  background-color: #e4abe42d; /* Цвет фона */
+  padding: 50px; /* Внутренний отступ */
+  width: 400px; /* Ширина прямоугольника */
+  height: auto; /* Автоматическая высота в зависимости от содержимого */
+  border-radius: 5px; /* Скругление углов */
+  border: 1px solid #cccccc00; /* Граница */
+  font-size: 20px; /* Размер шрифта */
+  color: #333; /* Цвет текста */
+  line-height: 1.8; /* Межстрочный интервал */
+  text-align: left; /* Выравнивание текста по левому краю */
+  left: 450px;
+}
+
+
+
+
+
 .menu__list-item:hover .submenu {
-  display: none; /* Скрываем выпадающий список по умолчанию */
+  display: block; /* показывать всплывающее меню при наведении на пункт меню */
 }
-.submenu li {
-  color: #6e6b6b; /* Цвет текста */
-  font-size: 24px; /* Размер шрифта */
-  font-family: "Roboto", sans-serif; /* Шрифт */
-  text-align: left; /* Выравнивание текста */
-  margin-bottom: 15px; /* Отступ между пунктами списка */
-}
-/*.submenu li:hover {
-  color: #f70000; 
-}*/
+
+
+
+
+
   .menu__list{
     display: flex;
     gap: 300px; 

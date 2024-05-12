@@ -1,0 +1,35 @@
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 350px;
+    margin-left: 500px;
+    margin-top: 100px;
+    
+  }
+  
+  th, td {
+    border: 2px solid #d398f5b9;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f0b3ff6c;
+  }
+  
+ 
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    background-image: linear-gradient(90deg, #9ea5e6e7, #ae7de6d3, #f7f1f8d3, #a49ff7d3, #3925bbd2, #bbecf8d3);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 100px;
+    animation: gradient 1s linear infinite;
+    font-family: 'Roboto', sans-serif;
+}
