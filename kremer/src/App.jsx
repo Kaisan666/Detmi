@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import {lazy} from 'react';
+import {lazy, Suspense} from 'react';
 //const Header = lazy(() => import('./components/header'))
 const MainPage = lazy(() => import('./pages/main'));
 const Registration = lazy(() => import('./pages/registration'));
@@ -25,7 +25,7 @@ const   Tasks = lazy(() => import('./pages/tasks'));
 const AppRouter = () => {
   return (
     <Router>
-        
+        <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<MainPage/>} />
         <Route path="/registration" element={<Registration />} />
@@ -47,6 +47,7 @@ const AppRouter = () => {
         <Route path="/leaders" element={<Leaders />} />
         <Route path="/tasks" element={<Tasks />} />
       </Routes>
+      </Suspense>
     </Router>
     
   );

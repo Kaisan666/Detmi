@@ -1,15 +1,15 @@
 import React from 'react';
-import "../styles/leaders.css"
+import styles from "../styles/leaders.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
 function Leaders() {
-        return (
-            <div>
-                <Header />
-    
-                <h2>Таблица лидеров</h2>
-                <table>
+    return (
+        <div>
+            <Header />
+            <div className={styles.leaders}>
+                <h2 className={styles.title}>Таблица лидеров</h2>
+                <table className={styles.table}>
                     <thead>
                         <tr>
                             <th>Никнейм</th>
@@ -31,10 +31,9 @@ function Leaders() {
                         {/* Добавьте здесь другие строки таблицы */}
                     </tbody>
                 </table>
-    
-              
-                <Footer />
             </div>
+            <Footer />
+        </div>
     );
 }
 
