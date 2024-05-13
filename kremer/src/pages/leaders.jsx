@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/leaders.module.css";
-import Header from "../components/header";
+import Header from "../components/headers/header";
 import Footer from "../components/footer";
 
 function Leaders() {

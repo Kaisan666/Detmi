@@ -1,6 +1,6 @@
 import React from 'react';
-import "../styles/leaders.css"
-import Header from "../components/header";
+
+import Header from "../components/headers/header";
 import Footer from "../components/footer";
 
 function Tasks() {
@@ -8,8 +8,6 @@ function Tasks() {
             <div>
                 <Header />
     <div>Таблица с задачами</div>
-    
-              
                 <Footer />
             </div>
     );

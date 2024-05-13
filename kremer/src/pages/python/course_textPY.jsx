@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
-import "../styles/course_textPY.css";
+import Header from "";
+import Footer from "";
+import "";
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
-
+import { Link } from 'react-router-dom';
 
 function Course_textPY() {
     return (
@@ -78,8 +78,12 @@ function Course_textPY() {
             <a href="pdf/python1.pdf" download>Скачать материал</a>
                 </div>
              <div className="step-buttons-container">
-                   <button className="step-button">Назад</button>
+                  <Link to="/videocoursePY1">
+                     <button className="step-button">Назад</button>
+                   </Link>
+                   <Link to="/videocoursePY2">
                   <button className="step-button">Вперед</button>
+                  </Link>
              </div>
             <Footer />
         </div>

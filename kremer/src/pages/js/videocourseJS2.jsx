@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
-import "../styles/videocourseC++.css"; // Импорт файла со стилями
+import Header from "../../components/headerPY";
+import Footer from "../../components/footerPY";
+import "../styles/videocourseJS.css"; // Импорт файла со стилями
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
-import python from "../images/C++.mp4"
+import python from "../images/JS2.mp4"
 
-function VideocourseC() {
+function VideocourseJS2() {
     return (
         <div>
             <Header />
@@ -19,7 +19,7 @@ function VideocourseC() {
                                 <div className="button_menu">
                                     <img src={arrow1_img} alt="" className="arrow1_img" />
                                 </div>
-                                <h1 className="greetings">ВВЕДЕНИЕ В КУРС</h1>
+                                <h1 className="greetings">Математические действия</h1>
                                 <div className="content-wrapper">
                                     <video controls className="video">
                                         <source src={python} type="video/mp4" />
@@ -40,4 +40,4 @@ function VideocourseC() {
     );
 }
 
-export default VideocourseC;
+export default VideocourseJS2;

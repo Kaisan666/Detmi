@@ -5,9 +5,10 @@ import "../styles/videocoursePY.css"; // Импорт файла со стиля
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
-import python from "../images/python1.mp4"
+import python from "../images/python2.mp4"
+import { Link } from 'react-router-dom';
 
-function VideocoursePY1() {
+function VideocoursePY2() {
     return (
         <div>
             <Header />
@@ -19,7 +20,7 @@ function VideocoursePY1() {
                                 <div className="button_menu">
                                     <img src={arrow1_img} alt="" className="arrow1_img" />
                                 </div>
-                                <h1 className="greetings"> Базовые операции в языке Python</h1>
+                                <h1 className="greetings"> Переменные и типы данных Python</h1>
                                 <div className="content-wrapper">
                                     <video controls className="video">
                                         <source src={python} type="video/mp4" />
@@ -27,8 +28,12 @@ function VideocoursePY1() {
                                     </video>
                                 </div>
                                 <div className="step-buttons-container">
-                                        <button className="step-button">Шаг назад</button>
-                                        <button className="step-button">Шаг вперед</button>
+                                        <Link to="/course_textPY">
+                                           <button className="step-button">Шаг назад</button>
+                                        </Link>
+                                        <Link to="/course_textPY1">
+                                           <button className="step-button">Шаг вперед</button>
+                                        </Link>
                                     </div>
                             </div>
                         </div>
@@ -40,4 +45,4 @@ function VideocoursePY1() {
     );
 }
 
-export default VideocoursePY1;
+export default VideocoursePY2;

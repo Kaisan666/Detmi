@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/headers/header";
-import HeaderJs from "../components/headers/headerJS";
-import HeaderPY from "../components/headers/headerPython";
-import HeaderCPP from "../components/headers/headerCPP";
+//import HeaderJs from "../components/headers/headerJS";
+//import HeaderPY from "../components/headers/headerPython";
+//import HeaderCPP from "../components/headers/headerCPP";
 import Footer from "../components/footer";
 import styles from "../styles/style_for_main.module.css"
 import Programmer_img from "../images/programmer.png"
@@ -17,10 +17,7 @@ import Some_img4 from "../images/8.png"
 function MainPage() {
     return (
     <div>
-        <HeaderCPP/>
-        <HeaderPY/>
         <Header/>
-        <HeaderJs/>
         <div className={styles.background}>
         <div className={styles["width-wrapper"]}> 
         <main className={styles.main}>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
+import Header from "../../components/headerPY";
+import Footer from "../../components/footerPY";
 import "../styles/course_textC.css";
 
 import pdf from "../images/Python1.pdf";

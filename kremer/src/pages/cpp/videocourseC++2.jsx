@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
+import Header from "../../components/headerPY";
+import Footer from "../../components/footerPY";
 import "../styles/videocourseC++.css"; // Импорт файла со стилями
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";

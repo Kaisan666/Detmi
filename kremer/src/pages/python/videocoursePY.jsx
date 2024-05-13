@@ -3,6 +3,7 @@ import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
 import "../styles/videocoursePY.css"; 
 import python from "../images/python.mp4";
+import { Link } from 'react-router-dom';
 
 function VideocoursePY() {
     const [isPanelOpen, setPanelOpen] = useState(false);
@@ -53,11 +54,13 @@ function VideocoursePY() {
                                         <source src={python} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
-                                    
                                 </div>
                                 <div className="step-buttons-container">
-                                    <button className="step-button">Шаг назад</button>
-                                    <button className="step-button">Шаг вперед</button>
+                                    <button className="step-button">Назад</button> {/* будет вести на стр с инфой про курс????*/}
+
+                                    <Link to="/videocoursePY1">
+                                    <button className="step-button">Далее</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
