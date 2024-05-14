@@ -4,7 +4,7 @@ import user_img from "../../images/user.png";
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function HeaderPY() {
+function HeaderPY() {
     return (
         <header className={styles.header}>
             <div className={styles.container0}>
@@ -40,3 +40,4 @@ export default function HeaderPY() {
         </header>
     );
 }
+export default HeaderPY;

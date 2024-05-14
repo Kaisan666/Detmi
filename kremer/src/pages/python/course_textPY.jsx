@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "";
 import Footer from "";
-import "";
+import styles from "../../styles";
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
@@ -11,10 +11,10 @@ function Course_textPY() {
     return (
         <div>
             <Header />
-            <div className="button_menu">
-                                    <img src={arrow1_img} alt="" className="arrow1_img" />
+            <div className={styles.button_menu}>
+                                    <img src={arrow1_img} alt="" className={styles.arrow1_img} />
                                 </div>
-              <div className="centered-text">
+              <div className={styles["centered-text"]}>
                  <p><strong>ЧИСЛА И ОПЕРАЦИИ НАД НИМИ</strong></p>
                    <p>
                     Добро пожаловать на курс "Python". Сегодня мы поговорим о числах и операциях
@@ -77,12 +77,12 @@ function Course_textPY() {
 
             <a href="pdf/python1.pdf" download>Скачать материал</a>
                 </div>
-             <div className="step-buttons-container">
+             <div className={styles["step-buttons-container"]}>
                   <Link to="/videocoursePY1">
-                     <button className="step-button">Назад</button>
+                     <button className={styles["step-button"]}>Назад</button>
                    </Link>
                    <Link to="/videocoursePY2">
-                  <button className="step-button">Вперед</button>
+                  <button className={styles["step-button"]}>Вперед</button>
                   </Link>
              </div>
             <Footer />
