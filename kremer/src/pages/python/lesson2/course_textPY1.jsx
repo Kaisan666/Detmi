@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
-import styles f  
-import pdf from "../images/Python1.pdf";
+import Header from "../../../components/headerPY";
+import Footer from "../../../components/footerPY";
+import styles from '../../../styles/python/course_textPY.module.css' 
+import pdf from "../../../images/Python1.pdf";
 //import programmers_img from "../images/programmers.png";
-import arrow1_img from "../images/arrow1.png";
+import arrow1_img from "../../../images/arrow1.png";
 
 
 function Course_textPY1() {

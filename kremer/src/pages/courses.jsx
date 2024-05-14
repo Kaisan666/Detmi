@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/footer";
-import Header from "../components/headerPY";
+import Header from "../components/headers/header";
+import Footer from  "../components/footer/footer";
 
 function Courses(){
     return(
@@ -9,6 +9,7 @@ function Courses(){
         <Link to = "python"/>
         <Link to = "javascript"/>
         <Link to = "cplusplus"/>
+        
         <Header/>
         </>
     )

@@ -12,9 +12,10 @@ import MainPage from './pages/main.jsx';
 import Leaders from './pages/leaders.jsx';
 import Courses from './pages/courses.jsx';
 import PythonIntro from './pages/python/pythonIntro.jsx';
-import VideocoursePY from './pages/python/videocoursePY.jsx';
-import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
-import Course_textPY from './pages/python/course_textPY.jsx';
+import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
+//import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
+import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
+import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
 import Python1_1 from './pages/python/tasks/1_1py.jsx';
 
 const routes = createRoutesFromElements(

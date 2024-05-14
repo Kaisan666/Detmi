@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
-import styles from "../../styles/python/VideocoursePY.module.css"; 
-import python from "../images/python.mp4";
+import Header from "../../../components/headerPY";
+import Footer from "../../../components/footerPY";
+import styles from "../../../styles/python/VideocoursePY.module.css"; 
+import python from "../../../images/python.mp4";
 import { Link } from 'react-router-dom';
 
 function VideocoursePY() {

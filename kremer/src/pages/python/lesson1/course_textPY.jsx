@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "";
-import Footer from "";
-import styles from "../../styles";
+import Header from "../../../components/headers/header";
+import Footer from  "../../../components/footer/footer";
+import styles from "../../../styles/python/course_textPY.module.css";
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
-import arrow1_img from "../images/arrow1.png";
+import arrow1_img from "../../../images/arrow1.png";
 import { Link } from 'react-router-dom';
 
 function Course_textPY() {

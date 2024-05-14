@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from "../components/headerPY";
-import Footer from "../components/footerPY";
-import styles from "../../styles/python/VideocoursePY.module.css"; 
+import Header from "../../../components/headerPY";
+import Footer from "../../../components/footerPY";
+import styles from "../../../styles/python/videocoursePY.module.css";
+
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
-import arrow1_img from "../images/arrow1.png";
-import python from "../images/python1.mp4"
+import arrow1_img from "../../../images/arrow1.png";
+import python from "../../../images/python1.mp4"
 import { Link } from 'react-router-dom';
 
 function VideocoursePY1() {

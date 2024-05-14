@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from "../../components/headerPY";
-import Footer from "../../components/footerPY";
-import "../styles/course_textC.css";
+//import Header from "../../components/headerPY";
+import Header from "../../../components/headerPY";
+import Footer from "../../../components/footerPY";
+import "../../../styles/cpp/CPPcourseText.module.css";
 
-import pdf from "../images/Python1.pdf";
+import pdf from "../../../images/Python1.pdf";
 //import programmers_img from "../images/programmers.png";
-import arrow1_img from "../images/arrow1.png";
+import arrow1_img from "../../../images/arrow1.png";
 
 
 function Course_textC1() {

@@ -1,4 +1,4 @@
-import './footerPY.css'
+import '../styles/footers/footerPY.module.css'
 
 import logo_img from "../images/Detmi.png"
 import tg_img from "../images/qrcodetg.png"

@@ -1,8 +1,8 @@
 import React from 'react';
 //import pdf from "../images/Python1.pdf";
 //import programmers_img from "../images/programmers.png";
-import arrow1_img from "../../images/arrow1.png";
-import styles from "../../styles/cpp/CPPcourseText.module.css";
+import arrow1_img from "../../../images/arrow1.png";
+import styles from "../../../styles/cpp/CPPcourseText.module.css";
 import HeaderCPP from "../../../components/headers/headerCPP";
 import Footer from '../../../components/footer/footer';
 function Course_textC() {

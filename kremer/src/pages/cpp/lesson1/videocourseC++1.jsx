@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../../components/headerPY";
-import Footer from "../../components/footerPY";
-import "../styles/videocourseC++.css"; // Импорт файла со стилями
+import Header from "../../../components/headerPY";
+import Footer from "../../../components/footerPY";
+import "../../../styles/cpp/videocourseC++.module.css"; // Импорт файла со стилями
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
-import arrow1_img from "../images/arrow1.png";
-import python from "../images/C++1.mp4"
+import arrow1_img from "../../../images/arrow1.png";
+import python from "../../../images/C++1.mp4"
 
 function VideocourseC1() {
     return (

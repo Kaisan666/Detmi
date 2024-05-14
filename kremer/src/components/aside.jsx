@@ -1,7 +1,7 @@
 import React from "react";
 
 // import '../styles/python_introduce.css'
-import '../styles/python_introduce.css'
+import '../styles/python/python_introduce.module.css'
 
 
 export default function AsideIntro(props){

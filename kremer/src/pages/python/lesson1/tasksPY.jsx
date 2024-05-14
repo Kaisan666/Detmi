@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from "../components/headers/headerPython";
-import Footer from "../components/footerPY";
+import Header from "../../../components/headers/headerPython";
+import Footer from "../../../components/footerPY";
 
 function TasksPY() {
         return (
