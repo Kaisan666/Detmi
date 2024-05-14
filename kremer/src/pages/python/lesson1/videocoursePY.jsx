@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/videocoursePY.css"; 
+import styles from "../../styles/python/VideocoursePY.module.css"; 
 import python from "../images/python.mp4";
 import { Link } from 'react-router-dom';
 
@@ -15,12 +15,12 @@ function VideocoursePY() {
     return (
         <div>
             <Header />
-            <button onClick={togglePanel} className="panel-toggle-button">
+            <button onClick={togglePanel} className={styles["panel-toggle-button"]}>
                 {isPanelOpen ? 'Скрыть панель' : 'Показать панель'}
             </button>
             
             {isPanelOpen && (
-    <div className="panel">
+    <div className={styles.panel}>
         <a>ВВЕДЕНИЕ В КУРС</a>
         <hr /> {/* Горизонтальная линия */}
         <a> Базовые операции в языке Python</a>
@@ -38,28 +38,28 @@ function VideocoursePY() {
     </div>
 )}
 
-            <main className="main">
+            <main className={styles.main}>
                 
             
-                <section className="top">
-                    <div className="container1">
-                        <div className="top__wrapper">
-                            <div className="zaeb">
+                <section className={styles.top}>
+                    <div className={styles.container1}>
+                        <div className={styles.top__wrapper}>
+                            <div className={styles.zaeb}>
                                 
-                                <h1 className="greetings">ВВЕДЕНИЕ В КУРС</h1>
+                                <h1 className={styles.greetings}>ВВЕДЕНИЕ В КУРС</h1>
                                 
-                                <div className="content-wrapper">
+                                <div className={styles["content-wrapper"]}>
                             
-                                    <video controls className="video">
+                                    <video controls className={styles.video}>
                                         <source src={python} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
                                 </div>
-                                <div className="step-buttons-container">
-                                    <button className="step-button">Назад</button> {/* будет вести на стр с инфой про курс????*/}
+                                <div className={styles["step-buttons-container"]}>
+                                    <button className={styles["step-button"]}>Назад</button> {/* будет вести на стр с инфой про курс????*/}
 
                                     <Link to="/videocoursePY1">
-                                    <button className="step-button">Далее</button>
+                                    <button className={styles["step-button"]}>Далее</button>
                                     </Link>
                                 </div>
                             </div>

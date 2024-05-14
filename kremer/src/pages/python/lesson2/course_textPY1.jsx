@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/course_textPY.css";
-
+import styles f  
 import pdf from "../images/Python1.pdf";
 //import programmers_img from "../images/programmers.png";
 import arrow1_img from "../images/arrow1.png";
@@ -12,11 +11,11 @@ function Course_textPY1() {
     return (
         <div>
             <Header />
-            <div className="button_menu">
-                                    <img src={arrow1_img} alt="" className="arrow1_img" />
+            <div className={styles.button_menu}>
+                                    <img src={arrow1_img} alt="" className={styles.arrow1_img} />
                                 </div>
            
-              <div className="centered-text">
+              <div className={styles["centered-text"]}>
                  <p><strong>ПЕРЕМЕННЫЕ И ТИПЫ ДАННЫХ PYTHON</strong></p>
                    <p>
                    Переменная в Python - это имя, которое связывается с объектом (значением)
@@ -79,15 +78,15 @@ function Course_textPY1() {
                 </li>
             </ul>
             <p>Это лишь малая часть операций, которые можно выполнять над числами в Python. Помните, что Python также предоставляет множество встроенных функций для работы с числами.</p>
-            <div src={pdf} className="pdf">
+            <div src={pdf} className={styles.pdf}>
             <a href="/Python1.pdf" download>
       Скачать материал
     </a>
             </div>
                 </div>
-             <div className="step-buttons-container">
-                   <button className="step-button">Назад</button>
-                  <button className="step-button">Вперед</button>
+             <div className={styles["step-buttons-container"]}>
+                   <button className={styles["step-button"]}>Назад</button>
+                  <button className={styles["step-button"]}>Вперед</button>
              </div>
             
             <Footer />

@@ -1,11 +1,15 @@
 import React from "react";
-import Header from "../components/header";
+import HeaderPY from "../../components/headers/headerPython";
 import Footer from "../../components/footer";
 import AsideIntro from "../../components/aside";
 import "../styles/python_introduсe.css";
 
-export default function PythonIntro(){
+function PythonIntro(){
     return(
+        <>
         <AsideIntro/>
+        </>
     )
 }
+
+export default PythonIntro;

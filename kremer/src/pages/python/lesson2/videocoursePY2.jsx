@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from "../components/headerPY";
 import Footer from "../components/footerPY";
-import "../styles/videocoursePY.css"; // Импорт файла со стилями
+import styles from "../../styles/python/VideocoursePY.module.css";
+// import "../styles/videocoursePY.css"; // Импорт файла со стилями
 //import o_img from "../images/0.png";
 //import pc_img from "../images/1.png";
 import arrow1_img from "../images/arrow1.png";
@@ -12,27 +13,27 @@ function VideocoursePY2() {
     return (
         <div>
             <Header />
-            <main className="main">
-                <section className="top">
-                    <div className="container1">
-                        <div className="top__wrapper">
-                            <div className="zaeb">
-                                <div className="button_menu">
-                                    <img src={arrow1_img} alt="" className="arrow1_img" />
+            <main className={styles["main"]}>
+                <section className={styles["top"]}>
+                    <div className={styles["container1"]}>
+                        <div className={styles["top__wrapper"]}>
+                            <div className={styles["zaeb"]}>
+                                <div className={styles["button_menu"]}>
+                                    <img src={arrow1_img} alt="" className={styles["arrow1_img"]} />
                                 </div>
-                                <h1 className="greetings"> Переменные и типы данных Python</h1>
-                                <div className="content-wrapper">
-                                    <video controls className="video">
+                                <h1 className={styles["greetings"]}> Переменные и типы данных Python</h1>
+                                <div className={styles["content-wrapper"]}>
+                                    <video controls className={styles["video"]}>
                                         <source src={python} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
                                 </div>
-                                <div className="step-buttons-container">
+                                <div className={styles["step-buttons-container"]}>
                                         <Link to="/course_textPY">
-                                           <button className="step-button">Шаг назад</button>
+                                           <button className={styles["step-button"]}>Шаг назад</button>
                                         </Link>
                                         <Link to="/course_textPY1">
-                                           <button className="step-button">Шаг вперед</button>
+                                           <button className={styles["step-button"]}>Шаг вперед</button>
                                         </Link>
                                     </div>
                             </div>
