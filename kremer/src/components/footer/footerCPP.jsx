@@ -1,8 +1,8 @@
-import styles from '../styles/style_for_main.module.css';
-import logo_img from "../images/Detmi.png";
-import tg_img from "../images/qrcodetg.png";
+import styles from '../../styles/style_for_main.module.css';
+import logo_img from "../../images/Detmi.png";
+import tg_img from "../../images/qrcodetg.png";
 
-export default function Footer() {
+export default function FooterCPP() {
     return (
         <footer className={styles.footer}>
             <div className={styles['footer__inner']}>

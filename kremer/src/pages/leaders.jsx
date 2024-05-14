@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../styles/leaders.module.css";
 import Header from "../components/headers/header";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 
 function Leaders() {
     return (

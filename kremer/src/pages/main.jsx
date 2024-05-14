@@ -3,7 +3,7 @@ import Header from "../components/headers/header";
 //import HeaderJs from "../components/headers/headerJS";
 //import HeaderPY from "../components/headers/headerPython";
 //import HeaderCPP from "../components/headers/headerCPP";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 import styles from "../styles/style_for_main.module.css"
 import Programmer_img from "../images/programmer.png"
 import Languages_img from "../images/languages.png"

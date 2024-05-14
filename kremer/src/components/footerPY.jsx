@@ -6,11 +6,11 @@ import tg_img from "../images/qrcodetg.png"
 export default function Footer(){
     return(
         <footer className="footer">
-                    <div className="footer__inner">
-                    <div className="width-wrapper__footer">
-                    <div className="container">
-                        <nav className="footer__menu">
-                        <ul className="footer__menu-list">
+                    <div className={styles.footer__inner}>
+                    <div className={styles["width-wrapper__footer"]}>
+                    <div className={styles.container}>
+                        <nav className={styles["footer__menu"]}>
+                        <ul className={styles.footer__menu-lis}>
                             <li className="footer__menu-item">
                             <p className="footer__menu-title">Курсы</p>
                             </li>
