@@ -30,19 +30,31 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* Высота контейнера по высоте экрана */
+        height: 70vh; /* Высота контейнера по высоте экрана */
     }
-    
+    .title {
+        font-size: 48px;
+        text-align: center;
+        background-image: linear-gradient(90deg, #9ea5e6e7, #ae7de6d3, #e77ffad3, #a49ff7d3, #3925bbd2, #bbecf8d3);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-top: 100px;
+        animation: gradient 1s linear infinite;
+        font-family: 'Roboto', sans-serif;
+    }
     .course-link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px; /* Ширина квадрата */
-        height: 400px; /* Высота квадрата */
+        width: 300px; /* Ширина квадрата */
+        height: 300px; /* Высота квадрата */
         margin: 20px; /* Отступ между курсами */
         background-color: #a0bdf1; /* Цвет фона квадрата */
         border-radius: 50px; /* Скругление углов */
         font-size: 28px;
+        margin-top: 10px;
         text-decoration: none; /* Убираем подчеркивание у ссылок */
     }
     .python {

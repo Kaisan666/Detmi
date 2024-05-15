@@ -8,8 +8,8 @@ function Courses() {
     return (
         <>
             <Header />
+            <h2 className={Styles.title}>Каталог курсов</h2>
             <div className={Styles["courses-container"]}>
-
                 <Link to="python" className={`${Styles["course-link"]} ${Styles["python"]}`}>
                     <span>Python</span>
                 </Link>

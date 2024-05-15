@@ -13,6 +13,8 @@ import Some_img3 from "../images/3.png"
 import Some_img2 from "../images/2.png"
 import Some_img1 from "../images/1.png"
 import Some_img4 from "../images/8.png"
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function MainPage() {
     return (
@@ -43,9 +45,9 @@ function MainPage() {
                         </div>
                     </div>
                     <div className={styles["section_1_item-3"]}>
-                        <a className={styles["section_1_item-3_link"]} href="#">
-                            Узнать подробнее
-                        </a>
+                        
+                            <NavLink to="/courses" className={styles["section_1_item-3_link"]} href="#"> Узнать подробнее</NavLink>
+                        
                     </div>
             </div>
             
