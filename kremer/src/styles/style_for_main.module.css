@@ -107,8 +107,10 @@ ul{
    
   }
   .background{
-    background: linear-gradient(#F0F4FF,rgba(240, 244, 255, 0.53));
-  }
+    background: linear-gradient(#F0F4FF,rgba(220, 228, 252, 0.397));
+   
+      }
+
 .width-wrapper{
   max-width: 1440px;
   margin: 0 auto;

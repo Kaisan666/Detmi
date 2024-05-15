@@ -1,4 +1,4 @@
-html{
+ html{
     box-sizing: border-box;
   }
   
@@ -19,7 +19,7 @@ html{
     color: black;
    }
   
-    body{
+    /*body{
       font-family: 'Inter' , sans-serif;
       font-size: 25px;
       font-weight: 1000px;
@@ -45,7 +45,7 @@ html{
 
 
 .submenu {
-    display: none; /* Сначала скрываем список */
+    display: none; 
     position: absolute;
     background-color: #9de99331;
     border: 1px solid #00000052;
@@ -55,12 +55,12 @@ html{
   }
   
   .menu__list-item:hover .submenu {
-    display: none; /* Скрываем выпадающий список по умолчанию */
+    display: none;
   }
   .submenu li {
-    color: #6e6b6b; /* Цвет текста */
-    font-size: 24px; /* Размер шрифта */
-    font-family: Arial, sans-serif; /* Шрифт */
-    text-align: left; /* Выравнивание текста */
-    margin-bottom: 15px; /* Отступ между пунктами списка */
-  }
+    color: #6e6b6b; 
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    text-align: left; 
+    margin-bottom: 15px; 
+  } */

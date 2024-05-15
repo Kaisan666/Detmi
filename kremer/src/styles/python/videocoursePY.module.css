@@ -19,15 +19,15 @@ html{
     color: black;
    }
   
-    body{
+   /* body{
       font-family: 'Inter' , sans-serif;
-      font-size: 25px;
+      font-size: 18px;
       font-weight: 1000px;
       background-color: #f0fff2b7; 
-    }
+    }*/
   
     
-    .header__inner {
+    /*.header__inner {
       padding-top: 10px;
       display: flex;
       justify-content: center;
@@ -65,7 +65,7 @@ html{
 
 
 .submenu {
-    display: none; /* Сначала скрываем список */
+    display: none; 
     position: absolute;
     background-color: #9de99331;
     border: 1px solid #00000052;
@@ -75,17 +75,17 @@ html{
   }
   
   .menu__list-item:hover .submenu {
-    display: none; /* Скрываем выпадающий список по умолчанию */
+    display: none;
   }
   .submenu li {
-    color: #6e6b6b; /* Цвет текста */
-    font-size: 24px; /* Размер шрифта */
-    font-family: Arial, sans-serif; /* Шрифт */
-    text-align: left; /* Выравнивание текста */
-    margin-bottom: 15px; /* Отступ между пунктами списка */
+    color: #6e6b6b; 
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    text-align: left; 
+    margin-bottom: 15px; 
   }
 .footer__inner{
-  /* padding-top: 200px; */
+ padding-top: 200px; 
 background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
 }
 .footer__menu{
@@ -93,7 +93,7 @@ background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
 display: flex;
 justify-content:center ;
 gap: 300px;
-/* align-items: center; */
+/* align-items: center; 
 
 }
 .logo__footer-img{
@@ -105,18 +105,18 @@ transform:scale(1.5) ;
 }
 
 .logo__footer{
-  /* margin-right: -75px; */
+   margin-right: -75px; 
   margin-top: 100px;
-  /* display: flex;
+   display: flex;
 text-align: center;
-align-items: end; */
-/* display: inline-block; */
-/* overflow: hidden; */
+align-items: end; 
+ display: inline-block; 
+/* overflow: hidden; 
 }
 
 .footer__text{
 text-align: center;
-/* padding-right: 50px; */
+/* padding-right: 50px; 
 font-size: 12px;
 padding-bottom: 20px;
 margin-right: 75px;
@@ -135,7 +135,9 @@ font-size: 20px;
   }
   /* .course-plan__list-text{
   font-size: 1.04vw;
-  } */
+  } 
+
+
   .tg_link{
     width: 125px;
     transition: 0.25s;
@@ -148,10 +150,10 @@ font-size: 20px;
     width: 63px;
     height: 65px;
 
-    right: 1px; /* Сдвиг элемента на 182px влево от его нормального положения */
-  }
+    right: 1px; 
+  }*/
   
-  .top{
+  /*.top{
   
     margin-bottom: 157px;
     margin: 10px 10px ;
@@ -175,7 +177,6 @@ font-size: 20px;
   right: 0;
 
 }
-
 
 .fon__img {
   width: 200px;
@@ -250,15 +251,15 @@ font-size: 20px;
 
 .panel {
   position: fixed;
-  top: 173px; /* Высота вашего заголовка (Header) */
+  top: 173px; 
   bottom: 0;
   left: 0;
   z-index: 1;
   width: 250px;
   background-color: #65d3862c;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(80, 218, 126, 0.63); /* Добавляем свечение с помощью box-shadow */
-  transition: left 0.9s ease; /* Анимация для плавного появления */
+  box-shadow: 0 0 10px rgba(80, 218, 126, 0.63); 
+  transition: left 0.9s ease;
 }
 
 
@@ -283,11 +284,11 @@ font-size: 20px;
   width: 100%;
   border: none;
   height: 1px;
-  background-color: #ccc; /* Цвет линии */
+  background-color: #ccc; 
   position: absolute;
   bottom: 0;
   left: 0;
   top: 200px;
-}
+}*/
 
 
