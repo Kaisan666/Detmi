@@ -1,3 +1,91 @@
+import React from 'react'
+
+import ReactDOM from 'react-dom'
+import{
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route 
+} from "react-router-dom";
+import './index.css'
+import MainPage from './pages/main.jsx';
+import Leaders from './pages/leaders.jsx';
+import Tasks from './pages/tasks.jsx';
+import Courses from './pages/courses.jsx';
+import PythonIntro from './pages/python/pythonIntro.jsx';
+import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
+//import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
+import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
+import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
+import Python1_1 from './pages/python/tasks/1_1py.jsx';
+import Registration from './pages/registration.jsx';
+
+
+const router = createBrowserRouter([
+  {path : "/",
+  element : <MainPage/>
+  },
+  {path : "leaderboard",
+    element : <Leaders/>
+  },
+  {path : "python_promo",
+    element : <PythonIntro/>
+  },
+  {path : "/registration",
+  element : <Registration/>
+},
+  {path : "user/registration",
+    element : <Registration/>
+  },
+  {path : "user/loginz",
+    element : <Registration/>
+  },
+  {path : "/courses",
+  element : <Courses/>
+},
+{path : "/tasks",
+element : <Tasks />
+},
+]
+
+);
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router}/>
+  </React.StrictMode>,
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
@@ -16,54 +104,40 @@ import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
 //import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
 import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
 import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
-import Python1_1 from './pages/python/tasks/1_1py.jsx';*/
+import Python1_1 from './pages/python/tasks/1_1py.jsx';
 
-const router = createBrowserRouter([
-  {path : "/",
-  element : <MainPage/>
-  },
-  {path : "leaderboard",
-    element : <Leaders/>
-  },
-  {path : "python_promo",
-    element : <PythonIntro/>
-  },
-  {path : "user/registration",
-    element : <Registration/>
-  },
-  {path : "user/loginz",
-    element : <Registration/>
-  },
+const routes = createRoutesFromElements(
+  <Route path ='/' element = {<MainPage/>}>
+    <Route path = "leaderboard" element = {<Leaders/>} />
+    <Route path='courses' element = {<Courses/>}> 
+      <Route path='python_promo' element = {<PythonIntro/>}/>
+      <Route path='lessons' element = {null}> 
+        <Route path='intro' element = {<VideocoursePY/>}/>
+        <Route path='1' element = {null}>
+           <Route path='video' element = {<VideocoursePY1/>}/>
+           <Route path='reading' element = {<Course_textPY/>}/>
+           <Route path='tasks' element = {null}>
+              <Route path='1' element = {<Python1_1/>}/>
+             </Route> 
+           </Route>
 
-]
+           </Route>
 
-);
+      </Route>
 
+
+    </Route>
+)
+
+const router = createBrowserRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}/>
   </React.StrictMode>,
-)
-import React from 'react'
-import ReactDOM from 'react-dom'
-import{
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route 
-} from "react-router-dom";
-import './index.css'
-import MainPage from './pages/main.jsx';
-import Leaders from './pages/leaders.jsx';
-import Courses from './pages/courses.jsx';
-import PythonIntro from './pages/python/pythonIntro.jsx';
-import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
-//import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
-import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
-import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
-import Python1_1 from './pages/python/tasks/1_1py.jsx';
-import Registration from './pages/registration.jsx';
+) */
+
+
 
 
 // <Router>

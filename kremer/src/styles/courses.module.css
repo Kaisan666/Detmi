@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    max-height: 100%;
+  }
+  ul{
+    list-style-type:  none; 
+  }
+     a{
+    text-decoration: none;
+    color: black;
+   }
+  
+    body{
+      font-family: "Roboto" , sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      font-weight: 1000px;
+      background-color: #F0F4FF; 
+    }
+    .courses-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Высота контейнера по высоте экрана */
+    }
+    
+    .course-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px; /* Ширина квадрата */
+        height: 400px; /* Высота квадрата */
+        margin: 20px; /* Отступ между курсами */
+        background-color: #a0bdf1; /* Цвет фона квадрата */
+        border-radius: 50px; /* Скругление углов */
+        font-size: 28px;
+        text-decoration: none; /* Убираем подчеркивание у ссылок */
+    }
+    .python {
+        background-color: #97f39c; /* Красный */
+    }
+    
+    .javascript {
+        background-color: #f8ea67; /* Голубой */
+    }
+    
+    .cplusplus {
+        background-color: #90bcee; /* Светло-зеленый */
+    }
+    /* Добавление плавной анимации при наведении на карточку курса */
+.python,
+.javascript,
+.cplusplus {
+    transition: transform 0.9s ease; /* Плавное изменение размера в течение 0.3 секунды */
+}
+
+.python:hover,
+.javascript:hover,
+.cplusplus:hover {
+    transform: scale(1.1); /* Увеличение размера карточки при наведении */
+}
+
+    .course-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    

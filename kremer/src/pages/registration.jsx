@@ -1,20 +1,18 @@
-//import React from 'react';
 import React from 'react';
 import styles from "../styles/registration.module.css"; // Импорт файла со стилями
+
 import User1_img from "../images/user1.png";
 import Detmi_img from "../images/Detmi.png";
-/* existing imports */
-
 
 function Registration() {
     return (
         <div>
-            <div className={styles["container"]}>
-                <a href="#" className={styles["User1"]}>
-                    <img src={User1_img} alt="" className={styles["user1_img"]} />
+            <div className={styles.container}>
+                <a href="#" className={styles.User1}>
+                    <img src={User1_img} alt="" className={styles.user1_img} />
                 </a>
-                <div className={styles["register-box"]}>
-                <img src={Detmi_img} alt="" className={styles["Detmi_img"]} />
+                <div className={styles['register-box']}>
+                    <img src={Detmi_img} alt="" className={styles.Detmi_img} />
                     <h2>Регистрация</h2>
                     <form>
                         <label htmlFor="username">Имя пользователя:</label>
@@ -26,10 +24,9 @@ function Registration() {
                         <label htmlFor="password">Пароль:</label>
                         <input type="password" id="password" name="password" required autoComplete="new-password" />
 
-                        <button type="submit" id="registerButton">Зарегистрироваться</button>
+                        <button type="submit" className={styles.registerButton}>Зарегистрироваться</button>
                     </form>
-                    <p className={styles["login-link"]}>Уже зарегистрированы? <a href="/login" className={styles["login-anchor"]}>Войти</a></p>
-                
+                    <p className={styles['login-link']}>Уже зарегистрированы? <a href="/login" className={styles['login-anchor']}>Войти</a></p>
                 </div>
             </div>
         </div>
