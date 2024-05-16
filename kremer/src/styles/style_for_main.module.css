@@ -107,7 +107,7 @@ ul{
    
   }
   .background{
-    background: linear-gradient(#F0F4FF,rgba(189, 205, 248, 0.322));
+    background: linear-gradient(#f4f7ff,rgba(240, 244, 255, 0.322));
    
       }
 
@@ -670,7 +670,7 @@ padding: 0 25px;
 .footer__inner{
   padding-top: 200px;
   margin-top: 0px;
-background: linear-gradient(rgba(189, 205, 248, 0.308), rgba(21, 42, 100, 0.589));
+background: linear-gradient(rgba(243, 246, 255, 0.205), rgba(47, 82, 179, 0.589));
 }
 .footer__menu{
   /* margin-top: 100px; */

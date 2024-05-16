@@ -44,7 +44,10 @@ text-align: justify;
 line-height: 1.6;
 align-items: center;
 }
-
+.background{
+  background: linear-gradient(#f4f7ff,rgba(240, 244, 255, 0.322));
+ 
+    }
 .codeBlock {
 background-color: #a6c6ab71;
 padding: 10px;

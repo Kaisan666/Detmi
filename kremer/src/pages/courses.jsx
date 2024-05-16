@@ -1,3 +1,4 @@
+// Courses.jsx
 import React from 'react';
 import { Link } from "react-router-dom";
 import Header from "../components/headers/header";
@@ -10,13 +11,13 @@ function Courses() {
             <Header />
             <h2 className={Styles.title}>Каталог курсов</h2>
             <div className={Styles["courses-container"]}>
-                <Link to="python" className={`${Styles["course-link"]} ${Styles["python"]}`}>
+            <Link to="/python_promo" className={`${Styles["course-link"]} ${Styles["python"]}`}>
                     <span>Python</span>
                 </Link>
-                <Link to="javascript" className={`${Styles["course-link"]} ${Styles["javascript"]}`}>
+                <Link to="/javascript_promo" className={`${Styles["course-link"]} ${Styles["javascript"]}`}>
                     <span>JavaScript</span>
                 </Link>
-                <Link to="cplusplus" className={`${Styles["course-link"]} ${Styles["cplusplus"]}`}>
+                <Link to="/cplusplus_promo" className={`${Styles["course-link"]} ${Styles["cplusplus"]}`}>
                     <span>C++</span>
                 </Link>
             </div>

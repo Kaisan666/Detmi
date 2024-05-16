@@ -51,7 +51,7 @@ html{
 .Detmi_img{
     width: 190px;
     height: 52px;
-    margin-left: 46px
+    margin-left: 54px;
     }
 
 .register-box {
@@ -64,7 +64,7 @@ html{
 
 .register-box h2 {
 
-    font-size: 18px;
+    font-size: 28px;
     text-align: center; 
     background-image: linear-gradient(90deg, #0019ffe7, #7700ffd3, #c200ffd3, #180affd3, #2400ffd2, #00cdffd3);
     background-size: 200%;
@@ -146,9 +146,9 @@ html{
 }
 
 .login-link {
-    margin-top: 20px;
+    margin-top: -6px;
     font-size: 14px;
-    margin-left: 42px;
+    margin-left: 48px;
     color: #ff00c8;
 }
 

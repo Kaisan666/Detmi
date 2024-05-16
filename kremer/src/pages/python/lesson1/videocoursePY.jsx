@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from "../../../components/headers/headerPython";
-
 import Footer from "../../../components/footer/footerPY";
-
 import styles from "../../../styles/python/videocoursePY.module.css"; 
 import python from "../../../images/python.mp4";
 import { Link } from 'react-router-dom';
 
 function VideocoursePY() {
     const [isPanelOpen, setPanelOpen] = useState(false);
+
+    useEffect(() => {
+        // Добавляем класс к body при монтировании компонента
+        document.body.classList.add(styles.bodyGreenBackground);
+
+        // Удаляем класс из body при размонтировании компонента
+        return () => {
+            document.body.classList.remove(styles.bodyGreenBackground);
+        };
+    }, []);
 
     const togglePanel = () => {
         setPanelOpen(!isPanelOpen);
@@ -17,29 +25,6 @@ function VideocoursePY() {
     return (
         <div>
             <Header />
-            <button onClick={togglePanel} className={styles["panel-toggle-button"]}>
-                {isPanelOpen ? 'Скрыть панель' : 'Показать панель'}
-            </button>
-            
-            {isPanelOpen && (
-                <div className={styles.panel}>
-                    <a>ВВЕДЕНИЕ В КУРС</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a> Базовые операции в языке Python</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a> Краткая теория</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a> Задачи</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a>Переменные и типы данных Python</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a> Краткая теория</a>
-                    <hr /> {/* Горизонтальная линия */}
-                    <a> Задачи</a>
-                    <hr /> {/* Горизонтальная линия */}
-                </div>
-            )}
-
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>

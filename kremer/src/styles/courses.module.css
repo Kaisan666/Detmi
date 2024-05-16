@@ -18,7 +18,13 @@ html{
     text-decoration: none;
     color: black;
    }
-  
+   .page-container {
+    background-color: #f0f0f0; /* Цвет фона страницы */
+    min-height: 100vh; /* Обеспечивает, что фон будет по всей высоте */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
     body{
       font-family: "Roboto" , sans-serif;
       font-weight: 500;
