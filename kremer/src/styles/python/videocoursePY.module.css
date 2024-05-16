@@ -19,15 +19,15 @@ html{
     color: black;
    }
   
-   /* body{
+  .body{
       font-family: 'Inter' , sans-serif;
       font-size: 18px;
       font-weight: 1000px;
       background-color: #f0fff2b7; 
-    }*/
-  
+    }
+ 
     
-    /*.header__inner {
+    .header__inner {
       padding-top: 10px;
       display: flex;
       justify-content: center;
@@ -64,7 +64,7 @@ html{
 
 
 
-.submenu {
+/*.submenu {
     display: none; 
     position: absolute;
     background-color: #9de99331;
@@ -73,7 +73,9 @@ html{
     width: 200px;
     height: 200px;
   }
-  
+  .styles.main{
+background-color: #c0e1d389;
+  }
   .menu__list-item:hover .submenu {
     display: none;
   }
@@ -83,7 +85,7 @@ html{
     font-family: Arial, sans-serif; 
     text-align: left; 
     margin-bottom: 15px; 
-  }
+  }*/
 .footer__inner{
  padding-top: 200px; 
 background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
@@ -93,7 +95,7 @@ background: linear-gradient(rgba(240, 255, 242, 0.53), rgb(157, 243, 171));
 display: flex;
 justify-content:center ;
 gap: 300px;
-/* align-items: center; 
+align-items: center; 
 
 }
 .logo__footer-img{
@@ -111,12 +113,12 @@ transform:scale(1.5) ;
 text-align: center;
 align-items: end; 
  display: inline-block; 
-/* overflow: hidden; 
+overflow: hidden; 
 }
 
 .footer__text{
 text-align: center;
-/* padding-right: 50px; 
+ padding-right: 50px; 
 font-size: 12px;
 padding-bottom: 20px;
 margin-right: 75px;
@@ -133,7 +135,7 @@ font-size: 20px;
   max-width: 1280px;
   margin: 0 auto;
   }
-  /* .course-plan__list-text{
+   .course-plan__list-text{
   font-size: 1.04vw;
   } 
 
@@ -149,11 +151,10 @@ font-size: 20px;
   .arrow1_img {
     width: 63px;
     height: 65px;
-
     right: 1px; 
-  }*/
+  }
   
-  /*.top{
+  .top{
   
     margin-bottom: 157px;
     margin: 10px 10px ;
@@ -204,7 +205,7 @@ font-size: 20px;
 }
 
 .video {
-  max-width: 900px;
+  max-width: 700px;
   margin: 30px 0 0 0;
 }
 
@@ -237,9 +238,9 @@ font-size: 20px;
 
 
 
-.panel-toggle-button {
+/*.panel-toggle-button {
     position: flex;
-    top: 137px;
+    top: 90px;
     width: 252px;
     left: 0;
     padding: 30px;
@@ -247,7 +248,7 @@ font-size: 20px;
     color: #fff;
     border: none;
     cursor: pointer;
-}
+}*/
 
 .panel {
   position: fixed;
@@ -289,6 +290,6 @@ font-size: 20px;
   bottom: 0;
   left: 0;
   top: 200px;
-}*/
+}   
 
 

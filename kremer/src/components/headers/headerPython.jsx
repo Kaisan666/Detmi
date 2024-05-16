@@ -17,12 +17,7 @@ function HeaderPY() {
                     <nav className={styles.menu}>
                         <ul className={styles['menu__list']}>
                             <li className={styles['menu__list-item']}>
-                                <a href="#" className={styles['menu__list-link']}>Каталог курсов</a>
-                                <ul className={styles.submenu}>
-                                    <li><a href="#">PYTHON</a></li>
-                                    <li><a href="#">JavaScript</a></li>
-                                    <li><a href="#">С++</a></li>
-                                </ul>
+                            <NavLink to="/courses" className={styles['menu__list-link']}>Каталог курсов</NavLink>
                             </li>                            
                             <li className={styles['menu__list-item']}>
                                 <NavLink to="/tasks" className={styles['menu__list-link']}>Задачи</NavLink>

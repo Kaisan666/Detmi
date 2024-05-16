@@ -28,7 +28,8 @@ const router = createBrowserRouter([
   {path : "leaderboard",
     element : <Leaders/>
   },
-  {path : "python_promo",
+  
+  {path : "/python_promo",
     element : <PythonIntro/>
   },
   {path : "/registration",
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
   {path : "user/registration",
     element : <Registration/>
   },
-  {path : "user/loginz",
+  {path : "user/login",
     element : <Registration/>
   },
   {path : "/courses",
@@ -45,6 +46,21 @@ const router = createBrowserRouter([
 },
 {path : "/tasks",
 element : <Tasks />
+},
+{path : "/videocoursePY",
+element : <VideocoursePY />
+},
+{path : "/videocoursePY1",
+element : <VideocoursePY1 />
+},
+{path : "/course_textPY",
+element : <Course_textPY/>
+},
+{path : "/course_textPY",
+element : <Course_textPY/>
+},
+{path : "/registration",
+element : <Registration/>
 },
 ]
 

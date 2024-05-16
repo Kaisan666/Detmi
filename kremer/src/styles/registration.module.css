@@ -44,18 +44,18 @@ html{
 
 }
 .user1_img {
-    width: 1000px;
+    width: 700px;
     margin-right: 50px;
 }
 
 .Detmi_img{
     width: 190px;
     height: 52px;
-    margin-left: 60px;
+    margin-left: 46px
     }
 
 .register-box {
-    padding: 97px;
+    padding: 40px;
     background-color: #ffffff5e;
     border-radius: 120px;
     box-shadow: 0 8px 9px rgba(146, 210, 235, 0.493), 0 0 10px rgba(146, 177, 235, 0.5), 0 0 15px rgba(220, 146, 235, 0.3);
@@ -64,7 +64,7 @@ html{
 
 .register-box h2 {
 
-    font-size: 48px;
+    font-size: 18px;
     text-align: center; 
     background-image: linear-gradient(90deg, #0019ffe7, #7700ffd3, #c200ffd3, #180affd3, #2400ffd2, #00cdffd3);
     background-size: 200%;
@@ -107,7 +107,7 @@ html{
     margin: 0 auto; 
     padding: 20px; 
     border-radius: 5px; 
-    font-size: 20px;
+    font-size: 14px;
 }
 
 
@@ -117,27 +117,27 @@ html{
 
 .register-box input {
     display: flex;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border: 1px solid #cacaca75;
     border-radius: 15px;
     margin-left: 10px;
-    width: 350px
+    width: 220px;
 }
 
 
 .registerButton {
-    padding: 20px;
-    margin-top: 27px;
+    padding: 8px;
+    margin-top: 40px;
     background-color: #b5dcf3;
     color: #fff9f9;
     border: none;
-    border-radius: 100px;
+    border-radius: 16px;
     cursor: pointer;
     margin-left: 9px;
     background-image: linear-gradient(90deg, #5ea6f3, #ab41e975, #47cce480);
-    font-size: 20px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -147,7 +147,7 @@ html{
 
 .login-link {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 42px;
     color: #ff00c8;
 }

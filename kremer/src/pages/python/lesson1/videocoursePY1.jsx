@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "../../../components/headerPY";
-import Footer from "../../../components/footerPY";
+import Header from "../../../components/headers/headerPython";
+import Footer from "../../../components/footer/footerPY";
 import styles from "../../../styles/python/videocoursePY.module.css";
 
 //import o_img from "../images/0.png";
