@@ -12,6 +12,6 @@ const userRouter = require('./userRouter')
 router.use('/user', userRouter)
 // router.use('/personal_information', personal_informationRouter)
 router.use('/user', personal_informationRouter)
-router.use('/leaderboard', leaderboardRouter)
+router.use(leaderboardRouter)
 router.use(user_of_courseRouter)
 module.exports = router

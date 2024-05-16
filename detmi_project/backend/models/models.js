@@ -32,6 +32,15 @@ const Users_of_course= sequelize.define('users_of_course', {
 
 
 })
+
+const Task = sequelize.define('task', {
+    id : {type : DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    answer : {type : DataTypes.STRING, allowNull : false}
+})
+
+
+
+
 // const Course = sequelize.define('course', {
 //     id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
 //     course : {type: DataTypes.STRING, allowNull:false}
