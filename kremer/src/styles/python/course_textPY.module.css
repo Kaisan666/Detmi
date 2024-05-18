@@ -21,6 +21,13 @@ a {
   color: black;
 }
 
+.Allwrapper{
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  margin-right: 25%;
+}
+
 .pageContainer {
   background-color: rgba(221, 255, 231, 0.651);
   min-height: 100vh;
@@ -64,7 +71,7 @@ a {
 
 .stepButtonsContainer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 1px;
 }
 .stepButton{
