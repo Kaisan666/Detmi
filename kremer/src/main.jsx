@@ -16,6 +16,7 @@ import PythonIntro from './pages/python/pythonIntro.jsx';
 import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
 import VideocourseJS from './pages/js/lesson1/videocourseJS.jsx';
 import VideocourseJS1 from './pages/js/lesson1/videocourseJS1.jsx';
+import VideocourseJS2 from './pages/js/lesson2/videocourseJS2.jsx';
 //import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
 import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
 import VideocoursePY2 from './pages/python/lesson2/videocoursePY2.jsx';
@@ -104,6 +105,9 @@ element : <VideocourseJS1 />
 },
 {path : "/course_textJS1",
 element : <Course_textJS1/>
+},
+{path : "/videocourseJS2",
+element : <VideocourseJS2 />
 },
 ]
 
