@@ -4,7 +4,7 @@ import Footer from "../../../components/footer/footerPY";
 import styles from "../../../styles/python/videocoursePY.module.css"; 
 import python from "../../../images/python.mp4";
 import { Link } from 'react-router-dom';
-
+import Sidebar from '../../sidebar';
 function VideocoursePY() {
     const [isPanelOpen, setPanelOpen] = useState(false);
 
@@ -25,6 +25,7 @@ function VideocoursePY() {
     return (
         <div>
             <Header />
+             <Sidebar />
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>

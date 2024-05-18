@@ -1,19 +1,16 @@
 import React from 'react';
-import Header from "../../../components/headers/header";
-import Footer from  "../../../components/footer/footer";
+import Header from "../../../components/headers/headerPython";
+import Footer from  "../../../components/footer/footerPY";
 import styles from "../../../styles/python/course_textPY.module.css";
-//import o_img from "../images/0.png";
-//import pc_img from "../images/1.png";
 import arrow1_img from "../../../images/arrow1.png";
 import { Link } from 'react-router-dom';
-
+import Sidebar from '../../sidebar';
 function CourseTextPY() {
     return (
-        <div>
+        <div className={styles.pageContainer}>
             <Header />
-            <div className={styles.buttonMenu}>
-                <img src={arrow1_img} alt="" className={styles.arrow1_img} />
-            </div>
+            <Sidebar />
+            
             <div className={styles.centeredText}>
                 <p><strong>ЧИСЛА И ОПЕРАЦИИ НАД НИМИ</strong></p>
                 <p>
@@ -24,15 +21,15 @@ function CourseTextPY() {
                 </p>
                 <pre className={styles.codeBlock}>
                     {`
-                        a = 5
-                        b = 3
-                        print(a + b)
+a = 5
+b = 3
+print(a + b)
                     `}
                 </pre>
                 <pre className={styles.codeBlock}>
                     {`
-                        c = 3.14
-                        d = 2.718 
+c = 3.14
+d = 2.718 
                     `}
                 </pre>
                 <p>Теперь давайте посмотрим на операции, которые можно выполнять над этими числами:</p>
@@ -41,8 +38,8 @@ function CourseTextPY() {
                         Сложение (+) и Вычитание (-):
                         <pre className={styles.codeBlock}>
                             {`
-                                result_sum = a + b
-                                result_diff = c - d
+result_sum = a + b
+result_diff = c - d
                             `}
                         </pre>
                     </li>
@@ -50,8 +47,8 @@ function CourseTextPY() {
                         Умножение (*) и Деление (/):
                         <pre className={styles.codeBlock}>
                             {`
-                                result_mult = a * c
-                                result_div = b / d
+result_mult = a * c
+result_div = b / d
                             `}
                         </pre>
                     </li>
@@ -59,8 +56,8 @@ function CourseTextPY() {
                         Целочисленное деление (//) и Остаток от деления (%):
                         <pre className={styles.codeBlock}>
                             {`
-                                result_floor_div = a // b
-                                result_modulo = a % b
+result_floor_div = a // b
+result_modulo = a % b
                             `}
                         </pre>
                     </li>
@@ -68,23 +65,24 @@ function CourseTextPY() {
                         Возведение в степень () и Квадратный корень (math.sqrt()):
                         <pre className={styles.codeBlock}>
                             {`
-                                import math
+import math
 
-                                result_power = a ** 2
-                                result_sqrt = math.sqrt(b)
+result_power = a ** 2
+result_sqrt = math.sqrt(b)
                             `}
                         </pre>
                     </li>
                 </ul>
                 <p>Это лишь малая часть операций, которые можно выполнять над числами в Python. Помните, что Python также предоставляет множество встроенных функций для работы с числами.</p>
-                <a href="pdf/python1.pdf" download>Скачать материал</a>
+                <a href="pdf/python1.pdf" download className={styles.footerLink}>Скачать материал</a>
+
             </div>
             <div className={styles.stepButtonsContainer}>
                 <Link to="/videocoursePY1" className={styles.stepButton}>
-                    <button>Назад</button>
+                    Назад
                 </Link>
-                <Link to="/videocoursePY2" className={styles.stepButton}>
-                    <button>Вперед</button>
+                <Link to="/1_1py" className={styles.stepButton}>
+                    Вперед
                 </Link>
             </div>
             <Footer />

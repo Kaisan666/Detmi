@@ -1,35 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from '../styles/python/python_introduce.module.css';
+import Header from "./headers/headerPython";
+import Footer from "./footer/footerPY";
 
 export default function AsideIntro(props) {
     return (
         <aside className={styles['aside-right']} id="asidee">
-            <div className={styles['aside-stiky-wrapper']}>
-                <div className={styles['button__wrapper']}>
-                    <Link to="/videocoursePY" className={styles['button__link']}>
-                        <button 
-                            className={styles['button__link-to-course']} 
-                            type="button" 
-                            id="button__course"
-                        >
-                            Записаться!
-                        </button>
-                    </Link>
+            <Header />
+
+            <div className={styles['button__wrapper']}>
+                <Link to="/videocoursePY" className={styles['button__link']}>
+                    <button 
+                        className={styles['button__link-to-course']} 
+                        type="button" 
+                        id="button__course"
+                    >
+                        ПЕРЕЙТИ НА КУРС
+                    </button>
+                </Link>
+            </div>
+            
+            <div className={styles['course-info']}>
+                <div>
+                    <h1 className={styles.title}>
+                   
+                        Курс по Python
+                       
+                    </h1>
+                    
                 </div>
-                <div className={styles['aside-right__main']}>
-                    <h4 className={styles['aside-right__title']}>В данном курсе:</h4>
-                    <ul className={styles['aside-right__list']}>
-                        <li className={styles['aside-right__list-item']}>100500 уроков</li>
-                        <li className={styles['aside-right__list-item']}>Миллион тестов</li>
-                        <li className={styles['aside-right__list-item']}>Тысячи задач</li>
+                <div className={styles['intro-block']}>
+                    <p><strong>Что вас ждет:</strong></p>
+                    <p>Данный курс является вводным по языку Python, в нем рассматриваются базовые структуры. После каждой темы идут практические задания.</p>
+                </div>
+                <div className={styles['for-whom-block']}>
+                    <p><strong>Для кого подойдет данный курс?</strong></p>
+                    <p>Данный курс подойдет для тех, кто еще совсем не знаком с данным языком программирования, но имеет огромное желание изучить его. Данный курс станет для вас путеводителем в него.</p>
+                </div>
+                <div className={styles['course-program']}>
+                    <p><strong>Программа курса:</strong></p>
+                    <ul>
+                        <li>Общая информация о курсе</li>
+                        <li>Основные типы данных</li>
+                        <li>Как проходить курс?</li>
+                        <li>Для преподавателей и работы в группах</li>
+                        <li>Введение. Знакомство с Python</li>
+                        <li>Команды print и input</li>
+                        <li>Параметры sep и end</li>
+                        <li>Целочисленная арифметика. Часть 1</li>
+                        <li>Целочисленная арифметика. Часть 2</li>
+                        <li>Цикл for</li>
+                        <li>Цикл for: функция range</li>
+                        <li>Частые сценарии</li>
+                        <li>Цикл while</li>
+                        <li>Цикл while: обработка цифр числа</li>
+                        <li>break, continue и else</li>
+                        <li>Поиск ошибок и ревью кода</li>
                     </ul>
-                    <span className={styles['aside-right__bottom1']}>
-                        Примерное время прохождения курса
-                    </span>
-                    <span className={styles['aside-right__bottom2']}> 50 часов</span>
                 </div>
             </div>
+            <Footer />
         </aside>
     );
 }
