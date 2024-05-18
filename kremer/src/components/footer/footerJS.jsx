@@ -1,4 +1,4 @@
-import styles from '../../styles/style_for_main.module.css';
+import styles from '../../styles/footers/footerJS.module.css';
 import logo_img from "../../images/Detmi.png";
 import tg_img from "../../images/qrcodetg.png";
 

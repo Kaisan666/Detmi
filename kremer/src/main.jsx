@@ -14,10 +14,13 @@ import Tasks from './pages/tasks.jsx';
 import Courses from './pages/courses.jsx';
 import PythonIntro from './pages/python/pythonIntro.jsx';
 import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
+import VideocourseJS from './pages/js/lesson1/videocourseJS.jsx';
+import VideocourseJS1 from './pages/js/lesson1/videocourseJS1.jsx';
 //import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
 import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
 import VideocoursePY2 from './pages/python/lesson2/videocoursePY2.jsx';
 import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
+import Course_textJS1 from './pages/js/lesson1/course_textJS1.jsx';
 import Course_textPY1 from './pages/python/lesson2/course_textPY1.jsx';
 import Python1_1 from './pages/python/tasks/1_1py.jsx';
 import Python1_2 from './pages/python/tasks/1_2py.jsx';
@@ -26,7 +29,7 @@ import Python2_1 from './pages/python/tasks/2_1py.jsx';
 import Python2_2 from './pages/python/tasks/2_2py.jsx';
 import Python2_3 from './pages/python/tasks/2_3py.jsx';
 import Registration from './pages/registration.jsx';
-
+import JSIntro from './pages/js/jsintro.jsx'
 
 const router = createBrowserRouter([
   {path : "/",
@@ -39,6 +42,9 @@ const router = createBrowserRouter([
   {path : "/python_promo",
     element : <PythonIntro/>
   },
+  {path : "/jsintro",
+  element : <JSIntro/>
+},
   {path : "/registration",
   element : <Registration/>
 },
@@ -89,6 +95,15 @@ element : <Python2_3 />
 },
 {path : "/registration",
 element : <Registration/>
+},
+{path : "/videocourseJS",
+element : <VideocourseJS />
+},
+{path : "/videocourseJS1",
+element : <VideocourseJS1 />
+},
+{path : "/course_textJS1",
+element : <Course_textJS1/>
 },
 ]
 
