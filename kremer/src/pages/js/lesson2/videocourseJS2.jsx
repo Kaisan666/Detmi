@@ -7,7 +7,7 @@ import videoSrc from '../../../images/JS2.mp4';
 import { Link } from 'react-router-dom';
 import Sidebar from '../../sidebar';
 
-function VideocourseJS2() {
+function VideocourseJS1() {
     const [isPanelOpen, setPanelOpen] = useState(false);
 
     useEffect(() => {
@@ -27,27 +27,28 @@ function VideocourseJS2() {
     return (
         <div>
             <Header />
-         
+            <Sidebar />
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>
                         <div className={styles.top__wrapper}>
                             <div className={styles.zaeb}>
-                                <h1 className={styles.greetings}>Математические действия в JS</h1>
+                                <h1 className={styles.greetings}>Математические операции</h1>
                                 <div className={styles["content-wrapper"]}>
                                     <video controls className={styles.video}>
                                         <source src={videoSrc} type="video/mp4" />
                                         Ваш браузер не поддерживает видео в формате MP4.
                                     </video>
                                 </div>
-                                <div className={styles.stepButtonsContainer}>
-                    <Link to="/course_textJS1" className={styles.stepButton}>
-                        Назад
-                    </Link>
-                    <Link to="/course_textJS2" className={styles.stepButton}>
-                        Вперед
-                    </Link>
-                </div>
+                                <div className={styles["step-buttons-container"]}>
+                                    <Link to='/1_3js'>
+                                    <button className={styles["step-button"]}>Назад</button>
+                                    </Link>
+                                    
+                                    <Link to="/course_textJS2">
+                                        <button className={styles["step-button"]}>Далее</button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,4 +59,4 @@ function VideocourseJS2() {
     );
 }
 
-export default VideocourseJS2;
+export default VideocourseJS1;

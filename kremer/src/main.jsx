@@ -29,6 +29,9 @@ import Python1_3 from './pages/python/tasks/1_3py.jsx';
 import Python2_1 from './pages/python/tasks/2_1py.jsx';
 import Python2_2 from './pages/python/tasks/2_2py.jsx';
 import Python2_3 from './pages/python/tasks/2_3py.jsx';
+import JS1_1 from './pages/js/tasks/1_1js.jsx';
+import JS1_2 from './pages/js/tasks/1_2js.jsx';
+import JS1_3 from './pages/js/tasks/1_3js.jsx';
 import Registration from './pages/registration.jsx';
 import JSIntro from './pages/js/jsintro.jsx'
 
@@ -108,6 +111,15 @@ element : <Course_textJS1/>
 },
 {path : "/videocourseJS2",
 element : <VideocourseJS2 />
+},
+{path : "/1_1js",
+element : <JS1_1/>
+},
+{path : "/1_2js",
+element : <JS1_2/>
+},
+{path : "/1_3js",
+element : <JS1_3/>
 },
 ]
 

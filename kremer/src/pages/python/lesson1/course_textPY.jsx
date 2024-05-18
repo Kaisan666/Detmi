@@ -78,7 +78,7 @@ function CourseTextPY() {
                     <a href="pdf/python1.pdf" download className={styles.footerLink}>Скачать материал</a>
     
                 </div>
-                <div className={styles.stepButtonsContainer}>
+                <div className={styles["step-buttons-container"]}>
                     <Link to="/videocoursePY1" className={styles.stepButton}>
                         Назад
                     </Link>

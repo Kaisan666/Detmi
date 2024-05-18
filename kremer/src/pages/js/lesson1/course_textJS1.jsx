@@ -61,11 +61,11 @@ function Course_textJS1() {
                 </pre>
                 <a href="pdf/python1.pdf" download className={styles.downloadLink}>Скачать материал</a>
             </div>
-            <div className={styles.stepButtonsContainer}>
-                <Link to="/videocourseJS">
+            <div className={styles["stepButtonsContainer"]}>
+                <Link to="/videocourseJS1">
                     <button className={styles.stepButton}>Шаг назад</button>
                 </Link>
-                <Link to="/videocourseJS2">
+                <Link to="/1_1js">
                     <button className={styles.stepButton}>Шаг вперед</button>
                 </Link>
             </div>
