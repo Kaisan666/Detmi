@@ -17,7 +17,7 @@ function Courses() {
                 <Link to="/jsintro" className={`${Styles["course-link"]} ${Styles["javascript"]}`}>
                     <span>JavaScript</span>
                 </Link>
-                <Link to="/cplusplus_promo" className={`${Styles["course-link"]} ${Styles["cplusplus"]}`}>
+                <Link to="/cppintro" className={`${Styles["course-link"]} ${Styles["cplusplus"]}`}>
                     <span>C++</span>
                 </Link>
             </div>

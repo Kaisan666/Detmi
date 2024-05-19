@@ -27,7 +27,7 @@ function VideocourseJS1() {
     return (
         <div>
             <Header />
-            <Sidebar />
+           
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>

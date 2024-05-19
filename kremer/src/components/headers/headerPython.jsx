@@ -27,9 +27,9 @@ function HeaderPY() {
                             </li>
                         </ul>
                     </nav>
-                    <a href="#" className={styles.user}>
-                        <img className={styles['user__img']} src={user_img} alt="" />
-                    </a>
+                    <NavLink to="/personal_account" className={styles.user}>
+            <img className={styles['user__img']} src={user_img} alt="User" />
+        </NavLink>
                 </div>
             </div>
         </header>

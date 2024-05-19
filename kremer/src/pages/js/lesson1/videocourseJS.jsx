@@ -27,7 +27,7 @@ function VideocourseJS() {
     return (
         <div>
             <Header />
-            <Sidebar />
+   
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>
@@ -41,7 +41,9 @@ function VideocourseJS() {
                                     </video>
                                 </div>
                                 <div className={styles["step-buttons-container"]}>
+                                <Link to='/courses'>
                                     <button className={styles["step-button"]}>Назад</button>
+                                    </Link>
                                     <Link to="/videocourseJS1">
                                         <button className={styles["step-button"]}>Далее</button>
                                     </Link>

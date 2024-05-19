@@ -1,40 +1,39 @@
 import React, { useState } from 'react';
-import styles from "../../../styles/js/tasks.module.css";
-import Header from "../../../components/headers/headerJS";
-import Footer from "../../../components/footer/footerJS";
+import styles from "../../../styles/cpp/tasks.module.css";
+import Header from "../../../components/headers/headerCPP";
+import Footer from "../../../components/footer/footerCPP";
 import { Link } from 'react-router-dom';
 
-
-function JS1_2() {
+function CPP2_1() {
     const [selectedOptions, setSelectedOptions] = useState(Array(5).fill('')); // Хранение выбранных ответов
     const [submitted, setSubmitted] = useState(false); // Состояние для отслеживания отправки ответов
 
     // Вопросы и варианты ответов
     const questions = [
         {
-            question: 'Как объявить переменную в JavaScript?',
-            options: ['A) let myVariable', 'B) var myVariable', 'C) const myVariable', 'D) let = myVariable', 'E) list'],
-            correctAnswer: 'C) const myVariable',
+            question: 'Какой оператор используется для проверки условия в C++?',
+            options: ['A) if', 'B) for', 'C) while', 'D) switch', 'E) case'],
+            correctAnswer: 'A) if',
         },
         {
-            question: 'Какое ключевое слово используется для объявления переменной, которая не будет меняться?',
-            options: ['A) let', 'B) const', 'C) var', 'D) fixed'],
-            correctAnswer: 'B) const',
+            question: 'Какой оператор используется для выполнения кода, если условие оператора if ложно?',
+            options: ['A) else', 'B) elseif', 'C) else if', 'D) otherwise', 'E) endif'],
+            correctAnswer: 'A) else',
         },
         {
-            question: 'Как объявить массив в JavaScript?',
-            options: ['A) let colors = {"red", "green", "blue"}', 'B) var colors = ["red", "green", "blue"];', 'C) array colors = ["red", "green", "blue"];', 'D) colors = ["red", "green", "blue"];'],
-            correctAnswer: 'B) var colors = ["red", "green", "blue"];',
+            question: 'Какой оператор используется для проверки множественных условий в C++?',
+            options: ['A) if', 'B) else', 'C) switch', 'D) while', 'E) for'],
+            correctAnswer: 'C) switch',
         },
         {
-            question: 'Какие символы используются для создания комментариев в JavaScript?',
-            options: ['A) // и /*', 'B) <!-- и -->', 'C) {} и []', 'D) -- и ++'],
-            correctAnswer: 'A) // и /*',
+            question: 'Какой оператор используется для завершения выполнения текущей итерации цикла и перехода к следующей итерации?',
+            options: ['A) break', 'B) continue', 'C) return', 'D) exit', 'E) pass'],
+            correctAnswer: 'B) continue',
         },
         {
-            question: 'Как объединить две строки в JavaScript?',
-            options: ['A) join()', 'B) merge()', 'C) concatenate()', 'D) +'],
-            correctAnswer: 'D) +',
+            question: 'Как называется оператор, используемый для выхода из цикла или блока switch в C++?',
+            options: ['A) break', 'B) continue', 'C) return', 'D) exit', 'E) pass'],
+            correctAnswer: 'A) break',
         },
     ];
 
@@ -69,7 +68,7 @@ function JS1_2() {
             <Header />
            
             <div className={styles.content}>
-                <h1 className={styles.title}>Задание №2</h1>
+                <h1 className={styles.title}>Задание №1</h1>
                 {questions.map((question, index) => (
                     <div key={index} className={styles.question}>
                         <h3>{question.question}</h3>
@@ -95,10 +94,10 @@ function JS1_2() {
                     <button className={styles.button} onClick={handleResetAnswers}>Сбросить ответы</button>
                 </div>
                 <div className={styles["step-buttons-container"]}>
-                    <Link to="/1_1js">
+                    <Link to="/course_textC1">
                         <button className={styles["step-button"]}>Шаг назад</button>
                     </Link>
-                    <Link to="/1_3js">
+                    <Link to="/2_2cpp">
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
@@ -108,4 +107,4 @@ function JS1_2() {
     );
 }
 
-export default JS1_2;
+export default CPP2_1;

@@ -39,7 +39,9 @@ function VideocoursePY() {
                                     </video>
                                 </div>
                                 <div className={styles["step-buttons-container"]}>
+                                <Link to='/courses'>
                                     <button className={styles["step-button"]}>Назад</button>
+                                    </Link>
                                     <Link to="/videocoursePY1">
                                         <button className={styles["step-button"]}>Далее</button>
                                     </Link>

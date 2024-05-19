@@ -4,7 +4,7 @@ import Header from "../../../components/headers/headerJS";
 import Footer from "../../../components/footer/footerJS";
 import { Link } from 'react-router-dom';
 import Sidebar from '../../sidebar';
-function JS1_3(){
+function JS2_2(){
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
 
@@ -24,17 +24,9 @@ function JS1_3(){
             
             <div className={styles.content}>
                 <div className={styles.task}>
-                    <h1>Задача №3</h1>
+                    <h1>Задача №2</h1>
                     <p>
-                    Напишите программу на JavaScript, которая принимает три различных значения от пользователя, определяет их типы данных и выводит результат.
-                    </p>
-<p>Пример:</p>
-
-<p>Ввод: "Hello", 123, true</p>
-<p>Вывод:</p>
-<p>Значение: Hello, Тип данных: string</p>
-<p>Значение: 123, Тип данных: number</p>
-<p>Значение: true, Тип данных: boolea
+                    Напишите программу, которая запрашивает у пользователя два числа, складывает их и выводит результат.
                     </p>
                 </div>
                 <div className={styles.compiler}>
@@ -52,10 +44,10 @@ function JS1_3(){
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
-                    <Link to="/1_2js">
+                    <Link to="/2_1js">
                         <button className={styles["step-button"]}>Шаг назад</button>
                     </Link>
-                    <Link to="/videocourseJS2">
+                    <Link to="/courses">
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
@@ -64,4 +56,4 @@ function JS1_3(){
         </div>
     );
 }
-export default JS1_3;
+export default JS2_2;

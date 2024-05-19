@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import styles from "../../../styles/js/tasks.module.css";
-import Header from "../../../components/headers/headerJS";
-import Footer from "../../../components/footer/footerJS";
+import styles from "../../../styles/cpp/tasks.module.css";
+import Header from "../../../components/headers/headerCPP";
+import Footer from "../../../components/footer/footerCPP";
 import { Link } from 'react-router-dom';
 import Sidebar from '../../sidebar';
-function JS1_3(){
+
+function CPP1_2() {
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
 
@@ -24,18 +25,17 @@ function JS1_3(){
             
             <div className={styles.content}>
                 <div className={styles.task}>
-                    <h1>Задача №3</h1>
+                    <h1>Задача №2</h1>
                     <p>
-                    Напишите программу на JavaScript, которая принимает три различных значения от пользователя, определяет их типы данных и выводит результат.
+                    Напишите программу на C++, которая принимает три различных значения от пользователя, определяет их типы данных и выводит результат.
                     </p>
-<p>Пример:</p>
+                    <p>Пример:</p>
 
-<p>Ввод: "Hello", 123, true</p>
-<p>Вывод:</p>
-<p>Значение: Hello, Тип данных: string</p>
-<p>Значение: 123, Тип данных: number</p>
-<p>Значение: true, Тип данных: boolea
-                    </p>
+                    <p>Ввод: "Hello", 123, true</p>
+                    <p>Вывод:</p>
+                    <p>Значение: Hello, Тип данных: string</p>
+                    <p>Значение: 123, Тип данных: int</p>
+                    <p>Значение: true, Тип данных: bool</p>
                 </div>
                 <div className={styles.compiler}>
                     <h2></h2>
@@ -52,10 +52,10 @@ function JS1_3(){
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
-                    <Link to="/1_2js">
+                    <Link to="/1_1cpp">
                         <button className={styles["step-button"]}>Шаг назад</button>
                     </Link>
-                    <Link to="/videocourseJS2">
+                    <Link to="/videocourseC++2">
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
@@ -64,4 +64,5 @@ function JS1_3(){
         </div>
     );
 }
-export default JS1_3;
+
+export default CPP1_2;

@@ -21,8 +21,16 @@ import VideocourseJS2 from './pages/js/lesson2/videocourseJS2.jsx';
 import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
 import VideocoursePY2 from './pages/python/lesson2/videocoursePY2.jsx';
 import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
+import VideocourseC from './pages/cpp/lesson1/videocourseC++.jsx';
+import VideocourseC1 from './pages/cpp/lesson1/videocourseC++1.jsx';
 import Course_textJS1 from './pages/js/lesson1/course_textJS1.jsx';
+
+import VideocourseC2 from './pages/cpp/lesson2/videocourseC++2.jsx';
+import Course_textC from './pages/cpp/lesson1/course_textC.jsx';
+import Course_textC1 from './pages/cpp/lesson2/course_textC1.jsx';
+
 import Course_textPY1 from './pages/python/lesson2/course_textPY1.jsx';
+import Course_textJS2 from './pages/js/lesson2/course_textJS2.jsx';
 import Python1_1 from './pages/python/tasks/1_1py.jsx';
 import Python1_2 from './pages/python/tasks/1_2py.jsx';
 import Python1_3 from './pages/python/tasks/1_3py.jsx';
@@ -32,9 +40,16 @@ import Python2_3 from './pages/python/tasks/2_3py.jsx';
 import JS1_1 from './pages/js/tasks/1_1js.jsx';
 import JS1_2 from './pages/js/tasks/1_2js.jsx';
 import JS1_3 from './pages/js/tasks/1_3js.jsx';
+import JS2_1 from './pages/js/tasks/2_1js.jsx'
+import JS2_2 from './pages/js/tasks/2_2js.jsx'
 import Registration from './pages/registration.jsx';
 import JSIntro from './pages/js/jsintro.jsx'
-
+import CPPIntro from './pages/cpp/cppintro.jsx'
+import CPP1_1 from './pages/cpp/tasks/1_1cpp.jsx';
+import CPP1_2 from './pages/cpp/tasks/1_2cpp.jsx';
+import CPP2_1 from './pages/cpp/tasks/2_1cpp.jsx';
+import CPP2_2 from './pages/cpp/tasks/2_2cpp.jsx';
+import UserProfile from './pages/personal_account.jsx';
 const router = createBrowserRouter([
   {path : "/",
   element : <MainPage/>
@@ -42,12 +57,18 @@ const router = createBrowserRouter([
   {path : "leaderboard",
     element : <Leaders/>
   },
-  
+  {path : "/personal_account",
+  element : <UserProfile/>
+},
+
   {path : "/python_promo",
     element : <PythonIntro/>
   },
   {path : "/jsintro",
   element : <JSIntro/>
+},
+{path : "/cppintro",
+element : <CPPIntro/>
 },
   {path : "/registration",
   element : <Registration/>
@@ -120,6 +141,42 @@ element : <JS1_2/>
 },
 {path : "/1_3js",
 element : <JS1_3/>
+},
+{path : "/course_textJS2",
+element : <Course_textJS2/>
+},
+{path : "/2_1js",
+element : <JS2_1/>
+},
+{path : "/2_2js",
+element : <JS2_2/>
+},
+{path : "/videocourseC++",
+element : <VideocourseC />
+},
+{path : "/videocourseC++1",
+element : <VideocourseC1/>
+},
+{path : "/course_textC",
+element : <Course_textC/>
+},
+{path : "/1_1cpp",
+element : <CPP1_1/>
+},
+{path : "/1_2cpp",
+element : <CPP1_2/>
+},
+{path : "/videocourseC++2",
+element : <VideocourseC2/>
+},
+{path : "/course_textC1",
+element : <Course_textC1/>
+},
+{path : "/2_1cpp",
+element : <CPP2_1/>
+},
+{path : "/2_2cpp",
+element : <CPP2_2/>
 },
 ]
 
