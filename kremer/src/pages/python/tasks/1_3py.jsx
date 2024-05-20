@@ -22,6 +22,7 @@ function Python1_3(){
         <div className={styles.container}>
             <Header />
             <Sidebar />
+            <div class="sec-widget" data-widget="e5b40b2c4700fa274dfd0b5749e6fa98"></div>
             <div className={styles.content}>
                 <div className={styles.task}>
                     <h1>Задача №3</h1>
@@ -33,9 +34,12 @@ function Python1_3(){
                 <div className={styles.compiler}>
                     <h2></h2>
                     <textarea
+                    
+
                         className={styles.codeInput}
                         placeholder="Введите ваш код здесь..."
                         value={code}
+                        
                         onChange={handleChange}
                     ></textarea>
                     <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
