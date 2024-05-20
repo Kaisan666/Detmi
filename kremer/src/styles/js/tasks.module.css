@@ -4,8 +4,14 @@
     background-color: #f7f0ca4f;
     padding: 20px;
     border-radius: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0 auto;
+}
+.Allwrapper{
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+
+  /* margin-right: 25%;  */
 }
 
 .title {
@@ -44,7 +50,10 @@
 .step-buttons-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 1px;
+    /* margin-bottom: 1px; */
+    margin-top: 50px;
+    margin-bottom: 25px;
+    gap: 7.813vw;;
   }
   .step-button {
     padding: 20px 63px;
@@ -53,7 +62,7 @@
     color: white;
     border: none;
     border-radius: 107px;
-    margin: 54px;
+    /* margin: 54px; */
     margin-top: 0px;
   }
   .step-button:hover {

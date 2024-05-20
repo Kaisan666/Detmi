@@ -5,7 +5,7 @@ import styles from "../../../styles/cpp/videocourseC++.module.css";
 
 import videoSrc from '../../../images/C++.mp4';
 import { Link } from 'react-router-dom';
-import Sidebar from '../../sidebar';
+import SidebarCPP from '../../sidebarCPP';
 
 function VideocourseJS1() {
     const [isPanelOpen, setPanelOpen] = useState(false);
@@ -27,7 +27,8 @@ function VideocourseJS1() {
     return (
         <div>
             <Header />
-           
+            <div className={styles.Allwrapper}>
+            <SidebarCPP/>
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>
@@ -41,11 +42,11 @@ function VideocourseJS1() {
                                     </video>
                                 </div>
                                 <div className={styles["step-buttons-container"]}>
-                                    <Link to='/courses'>
+                                    <Link to='/videocourseCPP'>
                                     <button className={styles["step-button"]}>Назад</button>
                                     </Link>
                                     
-                                    <Link to="/videocourseC++1">
+                                    <Link to="/videocourseCPP1">
                                         <button className={styles["step-button"]}>Далее</button>
                                     </Link>
                                 </div>
@@ -54,6 +55,7 @@ function VideocourseJS1() {
                     </div>
                 </section>
             </main>
+            </div>
             <Footer />
         </div>
     );

@@ -151,10 +151,10 @@ element : <JS2_1/>
 {path : "/2_2js",
 element : <JS2_2/>
 },
-{path : "/videocourseC++",
+{path : "/videocourseCPP",
 element : <VideocourseC />
 },
-{path : "/videocourseC++1",
+{path : "/videocourseCPP1",
 element : <VideocourseC1/>
 },
 {path : "/course_textC",
@@ -166,7 +166,7 @@ element : <CPP1_1/>
 {path : "/1_2cpp",
 element : <CPP1_2/>
 },
-{path : "/videocourseC++2",
+{path : "/videocourseCPP2",
 element : <VideocourseC2/>
 },
 {path : "/course_textC1",

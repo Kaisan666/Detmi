@@ -3,7 +3,7 @@ import styles from "../../../styles/js/tasks.module.css";
 import Header from "../../../components/headers/headerJS";
 import Footer from "../../../components/footer/footerJS";
 import { Link } from 'react-router-dom';
-import Sidebar from '../../sidebar';
+import SidebarJs from '../../sidebarJS';
 function JS1_3(){
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
@@ -21,7 +21,8 @@ function JS1_3(){
     return (
         <div className={styles.container}>
             <Header />
-            
+            <div className={styles.Allwrapper}>
+            <SidebarJs/>
             <div className={styles.content}>
                 <div className={styles.task}>
                     <h1>Задача №3</h1>
@@ -45,10 +46,12 @@ function JS1_3(){
                         value={code}
                         onChange={handleChange}
                     ></textarea>
-                    <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
-                    <div className={styles.result}>
-                        <h3>Результат:</h3>
-                        <p>{result}</p>
+                    <div>
+                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <div className={styles.result}>
+                            <h3>Результат:</h3>
+                            <p>{result}</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
@@ -59,6 +62,7 @@ function JS1_3(){
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

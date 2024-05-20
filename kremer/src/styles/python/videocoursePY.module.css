@@ -18,10 +18,20 @@ html{
     text-decoration: none;
     color: black;
    }
-  
+   .Allwrapper{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* margin-right: 20%; */
+  }
  /* videocoursePY.module.css */
 .main {
+  display: flex;
   min-height: 70vh; /* Обеспечивает, что фон будет охватывать всю высоту экрана */
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .bodyGreenBackground {
@@ -207,7 +217,7 @@ font-size: 20px;
 }
 
 .video {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 30px 0 0 0;
 }
 

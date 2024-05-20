@@ -9,9 +9,10 @@ function Course_textPY1() {
     return (
         <div className={styles.pageContainer}>
             <Header />
+            <div className={styles.Allwrapper}>
             <Sidebar />
             
-
+            <div className={styles.widthWrap}>
             <div className={styles.centeredText}>
                 <p><strong>ПЕРЕМЕННЫЕ И ТИПЫ ДАННЫХ PYTHON</strong></p>
                 <p>
@@ -86,7 +87,8 @@ result_modulo = a % b
                     <button className={styles.stepButton}>Шаг вперед</button>
                 </Link>
             </div>
-            
+            </div>
+            </div>
             <Footer />
         </div>
     );

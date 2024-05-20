@@ -25,7 +25,8 @@ a {
   display: flex;
   /* justify-content: center; */
   justify-content: space-between;
-  margin-right: 25%;
+
+  /* margin-right: 25%;  */
 }
 
 .pageContainer {
@@ -35,7 +36,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.widthWrap{
+  margin: 0 auto;
+}
 .centeredText {
   max-width: 870px;
   margin: 50px auto;
@@ -71,8 +74,10 @@ a {
 
 .stepButtonsContainer{
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1px;
+  justify-content: center;
+  /* margin-bottom: 1px; */
+  gap: 7.813vw;
+  margin-bottom: 50px;
 }
 .stepButton{
   padding: 20px 63px;
@@ -81,7 +86,7 @@ a {
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 107px;
-  margin: 54px;
+  /* margin: 54px; */
   margin-top: 0px;
 }
 .stepButton:hover {

@@ -21,6 +21,7 @@ function VideocoursePY1() {
     return (
         <div>
             <Header />
+            <div className={styles.Allwrapper}>
             <Sidebar />
             <main className={styles.main}>
                 <section className={styles.top}>
@@ -48,6 +49,7 @@ function VideocoursePY1() {
                     </div>
                 </section>
             </main>
+            </div>
             <Footer />
         </div>
     );

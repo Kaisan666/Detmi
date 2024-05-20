@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Header from "../../../components/headers/headerJS";
 import Footer from "../../../components/footer/footerJS";
 import styles from "../../../styles/js/videocourseJS.module.css";
-
+import SidebarJs from '../../sidebarJS';
 import videoSrc from '../../../images/JS1.mp4';
 import { Link } from 'react-router-dom';
-import Sidebar from '../../sidebar';
 
 function VideocourseJS1() {
     const [isPanelOpen, setPanelOpen] = useState(false);
@@ -27,7 +26,8 @@ function VideocourseJS1() {
     return (
         <div>
             <Header />
-           
+            <div className={styles.Allwrapper}>
+            <SidebarJs/>
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>
@@ -54,6 +54,7 @@ function VideocourseJS1() {
                     </div>
                 </section>
             </main>
+            </div>
             <Footer />
         </div>
     );

@@ -20,7 +20,9 @@ function Python2_3(){
 
     return (
         <div className={styles.container}>
-            <Header /> <Sidebar />
+            <Header /> 
+            <div className={styles.Allwrapper}>
+            <Sidebar />
             <div className={styles.content}>
                 <div className={styles.task}>
                     <h1>Задача №3</h1>
@@ -37,10 +39,12 @@ function Python2_3(){
                         value={code}
                         onChange={handleChange}
                     ></textarea>
-                    <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
-                    <div className={styles.result}>
-                        <h3>Результат:</h3>
-                        <p>{result}</p>
+                    <div>
+                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <div className={styles.result}>
+                            <h3>Результат:</h3>
+                            <p>{result}</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
@@ -51,6 +55,7 @@ function Python2_3(){
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

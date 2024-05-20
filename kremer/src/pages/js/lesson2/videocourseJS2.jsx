@@ -5,7 +5,7 @@ import styles from "../../../styles/js/videocourseJS.module.css";
 
 import videoSrc from '../../../images/JS2.mp4';
 import { Link } from 'react-router-dom';
-
+import SidebarJs from '../../sidebarJS';
 
 function VideocourseJS1() {
     const [isPanelOpen, setPanelOpen] = useState(false);
@@ -27,7 +27,8 @@ function VideocourseJS1() {
     return (
         <div>
             <Header />
-           
+            <div className={styles.Allwrapper}>
+            <SidebarJs/>
             <main className={styles.main}>
                 <section className={styles.top}>
                     <div className={styles.container1}>
@@ -54,6 +55,7 @@ function VideocourseJS1() {
                     </div>
                 </section>
             </main>
+            </div>
             <Footer />
         </div>
     );

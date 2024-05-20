@@ -3,7 +3,7 @@ import styles from "../../../styles/js/tasks.module.css";
 import Header from "../../../components/headers/headerJS";
 import Footer from "../../../components/footer/footerJS";
 import { Link } from 'react-router-dom';
-
+import SidebarJs from '../../sidebarJS';
 
 function JS2_1() {
     const [selectedOptions, setSelectedOptions] = useState(Array(5).fill('')); // Хранение выбранных ответов
@@ -92,7 +92,8 @@ function JS2_1() {
     return (
         <div className={styles.container}>
             <Header />
-           
+            <div className={styles.Allwrapper}>
+            <SidebarJs/>
             <div className={styles.content}>
                 <h1 className={styles.title}>Задание №1</h1>
                 {questions.map((question, index) => (
@@ -127,6 +128,7 @@ function JS2_1() {
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>
