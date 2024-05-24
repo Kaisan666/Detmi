@@ -27,8 +27,7 @@ const Personal_information = sequelize.define('personal_information', {
 })
 
 const Users_of_course= sequelize.define('users_of_course', {
-    id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
-    course: {type:DataTypes.STRING, allowNull: false}
+    id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true}
 
 
 })
@@ -41,12 +40,12 @@ const Task = sequelize.define('task', {
 
 
 
-// const Course = sequelize.define('course', {
-//     id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
-//     course : {type: DataTypes.STRING, allowNull:false}
+const Course = sequelize.define('course', {
+    id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
+    course : {type: DataTypes.STRING, allowNull:false}
 
 
-// })
+})
 
 User.hasOne(Personal_information)
 Personal_information.belongsTo(User)
@@ -54,16 +53,17 @@ Personal_information.belongsTo(User)
 User.hasOne(Leaderboard)
 Leaderboard.belongsTo(User)
 
-// Course.belongsToMany(User, {through: Users_of_course})
-// User.belongsToMany(Course, {through: Users_of_course})
+Course.belongsToMany(User, {through: Users_of_course})
+User.belongsToMany(Course, {through: Users_of_course})
 
-User.hasMany(Users_of_course)
-Users_of_course.belongsTo(User)
+// User.hasMany(Users_of_course)
+// Users_of_course.belongsTo(User)
 
 
 module.exports = {
     User, 
     Leaderboard,
     Personal_information,
-    Users_of_course
+    Users_of_course,
+    Course
 }
