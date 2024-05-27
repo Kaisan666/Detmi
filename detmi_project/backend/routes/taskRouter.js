@@ -5,7 +5,7 @@ const taskController = require("../controllers/taskController")
 // router.get("/:langId/:taskId/getresult", )
 router.post('/:langId/:taskId/giveanswer', authMiddleware, taskController.giveAnswer) 
 router.get('/tasks',authMiddleware, taskController.getAllTasks)
-// router.get("tasks/:taskId",authMiddleware, getAllTasks)
+router.get("/tasks/:taskId",authMiddleware, taskController.getOneTask)
 
 
 module.exports = router

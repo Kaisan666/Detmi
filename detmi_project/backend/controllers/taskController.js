@@ -87,14 +87,29 @@ class taskController {
                         const responseFromGet = await axios.request(optionsForGet);
                         console.log(`Response from GET: ${JSON.stringify(responseFromGet.data)}`);
                         const { stdout: outputFromGet, stderr: errorFromGet } = responseFromGet.data;
-                        console.log(`outputFromGet ${outputFromGet}, errorFromGet ${errorFromGet}`)
-                        const decodedOutputFromGet = Buffer.from(outputFromGet, 'base64').toString('utf-8');
+                        console.log(`outputFromGet ${outputFromGet}, errorFromGet ${errorFromGet}`);
+    
+                        let decodedOutputFromGet;
+                        let decodedErrorFromGet;
+    
+                        if (outputFromGet) {
+                            decodedOutputFromGet = Buffer.from(outputFromGet, 'base64').toString('utf-8').trim();
+                        } else {
+                            decodedOutputFromGet = '';
+                        }
+    
                         if (errorFromGet) {
-                            const decodedErrorFromGet = Buffer.from(errorFromGet, 'base64').toString('utf-8');
+                            decodedErrorFromGet = Buffer.from(errorFromGet, 'base64').toString('utf-8').trim();
+                        } else {
+                            decodedErrorFromGet = '';
+                        }
+    
+                        if (decodedErrorFromGet) {
                             console.log(`Error from GET: ${decodedErrorFromGet}`);
                             return res.json({ result: decodedErrorFromGet });
                         }
-
+    
+                        
                         if (decodedOutputFromGet.trim() == outputs) {
                             await sequelize.query(`
                                 UPDATE leaderboards
@@ -163,7 +178,7 @@ class taskController {
 
     async getAllTasks(req, res){
         const USERID = req.user.id;
-        const allTasks = await sequelize.query(`SELECT 
+        const [tasks, metadata] = await sequelize.query(`SELECT 
         tasks.id, 
         tasks.title, 
         tasks.rating, 
@@ -175,11 +190,38 @@ class taskController {
     WHERE 
         usertasks.userId = ${USERID};`)
           
-        return res.json(allTasks)
+        return res.json({tasks})
     }
     
+
+    async getOneTask(req, res) {
+        try {
+            const USERID = req.user.id; // Хотя USERID не используется в этом методе, возможно, он нужен для других целей
+            const taskId = parseInt(req.params.taskId, 10);
+    
+            console.log(`Fetching task with ID: ${taskId} for user: ${USERID}`);
+    
+            const task = await Task.findOne({
+                where: {
+                    id: taskId
+                },
+                attributes: ["title", "text", "rating"]
+            });
+    
+            if (!task) {
+                console.log(`Task with ID: ${taskId} not found`);
+                return res.status(404).json({ message: 'Task not found' });
+            }
+    
+            console.log(`Task found: ${JSON.stringify(task)}`);
+            return res.json({task});
+        } catch (error) {
+            console.error('Error while fetching task:', error);
+            return res.status(500).json({ message: 'Internal server error' });
+        }
+    }
+    
+
 }
-
-
 
 module.exports = new taskController()
