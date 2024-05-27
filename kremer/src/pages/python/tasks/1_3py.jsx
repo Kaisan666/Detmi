@@ -21,6 +21,7 @@ function Python1_3(){
     return (
         <div className={styles.container}>
             <Header />
+            <div className={styles.Allwrapper}>
             <Sidebar />
             <div class="sec-widget" data-widget="e5b40b2c4700fa274dfd0b5749e6fa98"></div>
             <div className={styles.content}>
@@ -39,13 +40,14 @@ function Python1_3(){
                         className={styles.codeInput}
                         placeholder="Введите ваш код здесь..."
                         value={code}
-                        
-                        onChange={handleChange}
-                    ></textarea>
-                    <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
-                    <div className={styles.result}>
-                        <h3>Результат:</h3>
-                        <p>{result}</p>
+                        onChange={handleChange}>
+                    </textarea>
+                    <div>
+                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <div className={styles.result}>
+                            <h3>Результат:</h3>
+                            <p>{result}</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
@@ -56,6 +58,7 @@ function Python1_3(){
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

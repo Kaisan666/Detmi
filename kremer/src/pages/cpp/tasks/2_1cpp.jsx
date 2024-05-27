@@ -3,7 +3,7 @@ import styles from "../../../styles/cpp/tasks.module.css";
 import Header from "../../../components/headers/headerCPP";
 import Footer from "../../../components/footer/footerCPP";
 import { Link } from 'react-router-dom';
-
+import SidebarCPP from '../../sidebarCPP';
 function CPP2_1() {
     const [selectedOptions, setSelectedOptions] = useState(Array(5).fill('')); // Хранение выбранных ответов
     const [submitted, setSubmitted] = useState(false); // Состояние для отслеживания отправки ответов
@@ -66,7 +66,8 @@ function CPP2_1() {
     return (
         <div className={styles.container}>
             <Header />
-           
+            <div className={styles.Allwrapper}>
+            <SidebarCPP/>
             <div className={styles.content}>
                 <h1 className={styles.title}>Задание №1</h1>
                 {questions.map((question, index) => (
@@ -101,6 +102,7 @@ function CPP2_1() {
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

@@ -78,7 +78,7 @@ function CourseTextPY() {
                     <a href="pdf/python1.pdf" download className={styles.footerLink}>Скачать материал</a>
     
                 </div>
-                <div className={styles["step-buttons-container"]}>
+                <div className={styles.stepButtonsContainer}>
                     <Link to="/videocoursePY1" className={styles.stepButton}>
                         Назад
                     </Link>
@@ -87,7 +87,7 @@ function CourseTextPY() {
                     </Link>
                 </div>
                 </div>
-            </div>
+            </div>                          
             <Footer />
         </div>
     );

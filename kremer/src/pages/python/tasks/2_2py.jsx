@@ -60,7 +60,9 @@ function Python2_2() {
 
     return (
         <div className={styles.container}>
-            <Header /> <Sidebar />
+            <Header /> 
+            <div className={styles.Allwrapper}>
+            <Sidebar />
             <div className={styles.content}>
                 <h1 className={styles.title}>Задание №2</h1>
                 {questions.map((question, index) => (
@@ -95,6 +97,7 @@ function Python2_2() {
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

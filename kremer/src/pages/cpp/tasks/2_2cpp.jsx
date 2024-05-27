@@ -3,7 +3,7 @@ import styles from "../../../styles/cpp/tasks.module.css";
 import Header from "../../../components/headers/headerCPP";
 import Footer from "../../../components/footer/footerCPP";
 import { Link } from 'react-router-dom';
-import Sidebar from '../../sidebar';
+import SidebarCPP from '../../sidebarCPP';
 
 function CPP1_2() {
     const [code, setCode] = useState('');
@@ -22,7 +22,8 @@ function CPP1_2() {
     return (
         <div className={styles.container}>
             <Header />
-            
+            <div className={styles.Allwrapper}>
+            <SidebarCPP/>
             <div className={styles.content}>
                 <div className={styles.task}>
                     <h1>Задача №2</h1>
@@ -39,10 +40,12 @@ function CPP1_2() {
                         value={code}
                         onChange={handleChange}
                     ></textarea>
-                    <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
-                    <div className={styles.result}>
-                        <h3>Результат:</h3>
-                        <p>{result}</p>
+                    <div>
+                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <div className={styles.result}>
+                            <h3>Результат:</h3>
+                            <p>{result}</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles["step-buttons-container"]}>
@@ -53,6 +56,7 @@ function CPP1_2() {
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

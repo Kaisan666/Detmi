@@ -148,14 +148,13 @@ html{
 .login-link {
     margin-top: -6px;
     font-size: 14px;
-    margin-left: 48px;
+    margin-left: 70px;
     color: #ff00c8;
 }
 
 .login-anchor {
     color: rgb(0, 0, 255);
-    text-decoration: underline;
-    cursor: pointer;
+    margin-left: -50px;
 }
 
 .login-anchor:hover {

@@ -9,6 +9,7 @@
     margin-top: 100px;
     font-size: 18px;
   }
+ 
   .for-whom-block{
     background-color:  #9fb9ffa4;
     margin-top: 40px;
@@ -27,6 +28,9 @@
     font-size: 16px;
     color: #000000;
     line-height: 1.5;
+  }
+  .parah{
+    font-size: 24px;
   }
   .for-whom-block {
   

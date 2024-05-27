@@ -24,7 +24,7 @@ function Registration() {
                         <label htmlFor="password">Пароль:</label>
                         <input type="password" id="password" name="password" required autoComplete="new-password" />
 
-                        <button type="submit" className={styles.registerButton}>Зарегистрироваться</button>
+                        <a href="/" className={styles.registerButton}>Зарегистрироваться</a>
                     </form>
                     <p className={styles['login-link']}>Уже зарегистрированы? <a href="/login" className={styles['login-anchor']}>Войти</a></p>
                 </div>

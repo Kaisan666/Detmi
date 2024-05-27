@@ -69,12 +69,13 @@ function Python1_1() {
     return (
         <div className={styles.container}>
             <Header />
+            <div className={styles.Allwrapper}>
             <Sidebar />
             <div className={styles.content}>
                 <h1 className={styles.title}>Задание №1</h1>
                 {questions.map((question, index) => (
                     <div key={index} className={styles.question}>
-                        <h3>{question.question}</h3>
+                        <h3 className={styles.forList}>{question.question}</h3>
                         <ul className={styles.options}>
                             {question.options.map((option, optionIndex) => (
                                 <li key={optionIndex}>
@@ -104,6 +105,7 @@ function Python1_1() {
                         <button className={styles["step-button"]}>Шаг вперед</button>
                     </Link>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

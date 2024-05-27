@@ -25,9 +25,10 @@ a {
   display: flex;
   /* justify-content: center; */
   justify-content: space-between;
-  margin-right: 25%;
 }
-
+.widthWrap{
+  margin: 0 auto;
+}
 .bodyYellowBackground {
     background-color: rgba(255, 255, 216, 0.329);
 }
@@ -68,7 +69,8 @@ a {
 .stepButtonsContainer{
   display: flex;
   justify-content: center;
-  margin-bottom: 1px;
+  /* margin-bottom: 1px; */
+  gap: 7.813vw;
 }
 .stepButton{
   padding: 20px 63px;
@@ -77,7 +79,7 @@ a {
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 107px;
-  margin: 54px;
+  /* margin: 54px; */
   margin-top: 0px;
 }
 .stepButton:hover {

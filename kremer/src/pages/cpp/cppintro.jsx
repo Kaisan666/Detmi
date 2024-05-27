@@ -10,7 +10,7 @@ export default function CPPIntro(props) {
             <Header />
 
             <div className={styles['button__wrapper']}>
-                <Link to="/videocourseC++" className={styles['button__link']}>
+                <Link to="/videocourseCPP" className={styles['button__link']}>
                     <button 
                         className={styles['button__link-to-course']} 
                         type="button" 
@@ -28,8 +28,8 @@ export default function CPPIntro(props) {
                     </h1>
                 </div>
                 <div className={styles['intro-block']}>
-                    <p><strong>Что вас ждет:</strong></p>
-                    <p>Данный курс является вводным по языку C++, в нем рассматриваются базовые структуры. После каждой темы идут практические задания.</p>
+                    <p className={styles.parah}><strong>Что вас ждет:</strong></p>
+                    <p className={styles.about}>Данный курс является вводным по языку C++, в нем рассматриваются базовые структуры. После каждой темы идут практические задания.</p>
                 </div>
                 <div className={styles['for-whom-block']}>
                     <p><strong>Для кого подойдет данный курс?</strong></p>

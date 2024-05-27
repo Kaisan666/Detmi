@@ -4,8 +4,7 @@
     background-color: #caf7cc4f;
     padding: 20px;
     border-radius: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0 auto;
 }
 
 .title {
@@ -16,11 +15,18 @@
 .container{
     background-color:rgba(221, 255, 231, 0.651);
   }
-  
+  .Allwrapper{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* margin-right: 10%; */
+  }
 .question {
     margin-bottom: 20px;
 }
-
+.forList{
+  margin-bottom: 10px;
+}
 .options {
     list-style-type: none;
 }
@@ -44,7 +50,10 @@
 .step-buttons-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 1px;
+    /* margin-bottom: 1px; */
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
   .step-button {
     padding: 20px 63px;
@@ -53,7 +62,7 @@
     color: white;
     border: none;
     border-radius: 107px;
-    margin: 54px;
+    /* margin: 54px; */
     margin-top: 0px;
   }
   .step-button:hover {
@@ -64,7 +73,7 @@
    background-color:  rgba(255, 135, 135, 0.541); /* Красный цвет текста для неправильных ответов */
   }
   .buttonGroup {
-    margin-top: 20px; /* добавляем отступ между кнопками */
+    margin-top: 25px; /* добавляем отступ между кнопками */
   }
   
   .button {
