@@ -11,13 +11,17 @@
     position: relative;
     margin-bottom: 20px;
 }
-
+.heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
 .profilePic img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ddd;
+    border: 2px solid #f5cef8;
 }
 
 .profilePic input {
