@@ -3,7 +3,7 @@ import Header from "../components/headers/header";
 import Footer from "../components/footer/footer";
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-
+import { Link } from "react-router-dom";
 const Tasks = () =>  {
     const [tasks, setTasks] = useState([]);
 
@@ -36,16 +36,70 @@ const Tasks = () =>  {
                             <th>№</th>
                             <th>Наименование</th>
                             <th>Количество баллов</th>
+                            <th>Статус задачи</th>
                         </tr>
                     </thead>
                     <tbody>
-                    {tasks.length > 0 && tasks.map((task) => (
                          <tr>
-                         <td>{task.id}</td>
-                         <td> <a href={task.url}>{task.title}</a> </td>
-                         <td>{task.rating}</td>
+                         <td><Link to="/task1"> 1</Link></td>
+                         <td>Большая и меньшая цифры числа</td>
+                         <td>10</td>
+                         <td>не приступал</td>
                      </tr>
-                    ))}
+                         <tr>
+                         <td>2</td>
+                         <td>Алгебраическая сумма</td>
+                         <td>25</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>3</td>
+                         <td>Определить, пройдет ли кирпич в отверстие</td>
+                         <td>15</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>4</td>
+                         <td>Брошенное тело под углом</td>
+                         <td>35</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>5</td>
+                         <td>Вычислить длину вектора с координатами x, y, z</td>
+                         <td>40</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>6</td>
+                         <td>След матрицы</td>
+                         <td>10</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>7</td>
+                         <td>Целое число</td>
+                         <td>55</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>8</td>
+                         <td>Шесть равнобедренных треугольников</td>
+                         <td>80</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>9</td>
+                         <td>Циклическое вычисление суммы чисел</td>
+                         <td>5</td>
+                         <td>не приступал</td>
+                     </tr>
+                         <tr>
+                         <td>10</td>
+                         <td>Сумма 1/sin(1) + 1/(sin(1) + sin(2)) + ... + 1/(sin(1)+sin(2)+...+sin(n))</td>
+                         <td>10</td>
+                         <td>не приступал</td>
+                     </tr>
                     </tbody>
                 </table>
             </div>
