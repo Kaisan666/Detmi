@@ -99,4 +99,31 @@
   .button__link-to-course:hover {
     background-color: #1120ec;
   }
+  .course-program p {
+    font-size: 24px;
+    margin-left: 120px;
+  }
+  
+  .course-program ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-program li {
+    margin-bottom: 2px;
+  }
+  
+  .course-program li::before {
+    content: "•";
+    color: #0059ff;
+    display: inline-block;
+    width: 1em;
+    margin-left: 2em;
+    font-size: 2em; /* Увеличиваем размер символа */
+    transition: transform 0.3s; /* Добавляем плавный переход */
+  }
+  
+  .course-program li:hover::before {
+    transform: scale(1.5); /* Увеличиваем размер символа при наведении */
+  }
   

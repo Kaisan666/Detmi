@@ -1,4 +1,3 @@
-
 .aside-right {
     background-color: #feffe0cb; /* Светло-зеленый фон */
    
@@ -94,5 +93,34 @@
   
   .button__link-to-course:hover {
     background-color: #ece811;
+  }
+
+
+  .course-program p {
+    font-size: 24px;
+    margin-left: 120px;
+  }
+  
+  .course-program ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-program li {
+    margin-bottom: 2px;
+  }
+  
+  .course-program li::before {
+    content: "•";
+    color: #ffbb00;
+    display: inline-block;
+    width: 1em;
+    margin-left: 2em;
+    font-size: 2em; /* Увеличиваем размер символа */
+    transition: transform 0.3s; /* Добавляем плавный переход */
+  }
+  
+  .course-program li:hover::before {
+    transform: scale(1.5); /* Увеличиваем размер символа при наведении */
   }
   

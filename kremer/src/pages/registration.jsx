@@ -64,7 +64,7 @@ const Registration = () => {
         <div>
             {error && (
                     <div>
-                        <span> ОШИБКА СДЕЛАТЬ ТУТ КРАСИВО!!!!!!!!!!! {error}</span>
+                        <span>  {error}</span>
                     </div>
                 )}
             <div className={styles.container}>

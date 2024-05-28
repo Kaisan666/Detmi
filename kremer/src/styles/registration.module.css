@@ -160,3 +160,12 @@ html{
 .login-anchor:hover {
     color: rgb(225, 158, 231);
 }
+span {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffffff; /* Цвет фона */
+    color: #ffc1fc; /* Цвет текста */
+    border: 2px solid #f155ff; /* Толщина и цвет границы */
+    border-radius: 5px; /* Закругленные углы */
+    font-weight: bold; /* Жирный текст */
+}

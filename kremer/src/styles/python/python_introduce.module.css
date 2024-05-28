@@ -95,3 +95,44 @@
 .button__link-to-course:hover {
   background-color: #35ec11;
 }
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.course-program {
+  font-family: Arial, sans-serif;
+  background-color: #dffcdc41;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.course-program p {
+  font-size: 24px;
+  margin-left: 120px;
+}
+
+.course-program ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-program li {
+  margin-bottom: 2px;
+}
+
+.course-program li::before {
+  content: "•";
+  color: #00ff0d;
+  display: inline-block;
+  width: 1em;
+  margin-left: 2em;
+  font-size: 2em; /* Увеличиваем размер символа */
+  transition: transform 0.3s; /* Добавляем плавный переход */
+}
+
+.course-program li:hover::before {
+  transform: scale(1.5); /* Увеличиваем размер символа при наведении */
+}
