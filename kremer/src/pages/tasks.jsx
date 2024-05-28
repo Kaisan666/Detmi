@@ -1,9 +1,30 @@
-import React from 'react';
 import styles from "../styles/tasks.module.css";
 import Header from "../components/headers/header";
 import Footer from "../components/footer/footer";
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
-function Tasks() {
+const Tasks = () =>  {
+    const [tasks, setTasks] = useState([]);
+
+    const fetch = async () =>{
+       await axios
+        .get("http://localhost:5000/api/tasks",{
+            headers: {
+                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
+            }
+        })
+        .then((response) => {
+            console.log(response.data);
+            setTasks(response.data.tasks);
+        });
+    }
+
+    useEffect(() => {
+        fetch();
+     }, []);
+
+     debugger;
         return (
         <div>
             <Header />
@@ -18,57 +39,13 @@ function Tasks() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td> <a href="https://ee4ea046.widgets.sphere-engine.com/lp?hash=ZrJrIjy00h">Долой комментарии!</a> </td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td> <td> <a href="https://ee4ea046.widgets.sphere-engine.com/lp?hash=IBcjl1ocdx">Долой комментарии!</a> </td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        {/* Добавьте здесь другие строки таблицы */}
+                    {tasks.length > 0 && tasks.map((task) => (
+                         <tr>
+                         <td>{task.id}</td>
+                         <td> <a href={task.url}>{task.title}</a> </td>
+                         <td>{task.rating}</td>
+                     </tr>
+                    ))}
                     </tbody>
                 </table>
             </div>

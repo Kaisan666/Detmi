@@ -40,6 +40,7 @@ const Task = sequelize.define('task',{
     id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
     title : {type : DataTypes.STRING, allowNull : false},
     text : {type : DataTypes.STRING, allowNull : false},
+    url : {type : DataTypes.STRING, allowNull : false},
     rating : {type : DataTypes.INTEGER, allowNull: false}
 })
 

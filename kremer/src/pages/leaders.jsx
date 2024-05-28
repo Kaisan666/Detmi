@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "../styles/leaders.module.css";
 import Header from "../components/headers/header";
 import Footer from "../components/footer/footer";
+import axios from 'axios';
 
-function Leaders() {
+const Leaders = () => {
+
+    const [leaders, setLeaders] = useState([]);
+
+    const fetch = async () =>{
+       await axios
+        .get("http://localhost:5000/api/leaderboard",{
+            headers: {
+                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
+            }
+        })
+        .then((response) => {
+            console.log(response.data);
+            setLeaders(response.data.leaders);
+        });
+    }
+
+    useEffect(() => {
+        fetch();
+     }, []);
+
     return (
         <div>
             <Header />
@@ -18,17 +39,14 @@ function Leaders() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Иван</td>
-                            <td>100</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Мария</td>
-                            <td>90</td>
-                            <td>2</td>
-                        </tr>
-                        {/* Добавьте здесь другие строки таблицы */}
+                    {leaders.length > 0 && leaders.map((leader) => (
+                         <tr>
+                         <th>{leader.user.nickname}</th>
+                         <th>{leader.rating}</th>
+                         <th>{leader.rating > 90 ? "Опытный" : "Новичок"}</th>
+                     </tr>
+                    ))}
+                        
                     </tbody>
                 </table>
             </div>

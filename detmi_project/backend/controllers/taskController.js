@@ -181,15 +181,10 @@ class taskController {
         const [tasks, metadata] = await sequelize.query(`SELECT 
         tasks.id, 
         tasks.title, 
-        tasks.rating, 
-        usertasks.status
-    FROM 
-        tasks
-    JOIN 
-        usertasks ON tasks.id = usertasks.taskId
-    WHERE 
-        usertasks.userId = ${USERID};`)
-          
+        tasks.rating,
+        tasks.url
+        FROM tasks`)
+        
         return res.json({tasks})
     }
     
