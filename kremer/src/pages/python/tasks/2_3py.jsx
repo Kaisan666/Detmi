@@ -4,19 +4,21 @@ import Header from "../../../components/headers/headerPython";
 import Footer from "../../../components/footer/footerPY";
 import { Link } from 'react-router-dom';
 import Sidebar from '../../sidebar';
+import { sendTask } from '../../../compilator';
 function Python2_3(){
+    const input = "10"
+    const output = "55"
+    const langid = 71
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
 
-    const handleChange = (event) => {
-        setCode(event.target.value);
-    };
-
-    const handleSubmit = () => {
-        // Ваша логика для компиляции и выполнения кода здесь
-        // Предположим, что результат компиляции или выполнения будет записан в переменную result
-        setResult('Результат выполнения вашего кода здесь...');
-    };
+    
+    const send = async () => {
+        const response = await sendTask(input, output, code, langid)
+        console.log(response)
+        setResult(response)
+    }
+    
 
     return (
         <div className={styles.container}>
@@ -27,23 +29,30 @@ function Python2_3(){
                 <div className={styles.task}>
                     <h1>Задача №3</h1>
                     <p>
-        Напишите программу, в которой будет выводится ФИО, дата рождения
+        Напишите программу, которая посчитает сумму чисел от 1 до n, n вводится с клавиатуры
                 
                     </p>
                 </div>
                 <div className={styles.compiler}>
                     <h2></h2>
                     <textarea
+                    
+
                         className={styles.codeInput}
                         placeholder="Введите ваш код здесь..."
                         value={code}
-                        onChange={handleChange}
-                    ></textarea>
+                        onChange={e => setCode(e.target.value)}>
+                    </textarea>
                     <div>
-                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <button className={styles.compileButton} onClick={send}>Выполнить</button>
                         <div className={styles.result}>
                             <h3>Результат:</h3>
-                            <p>{result}</p>
+                            <textarea
+                                value={result}
+                                readOnly
+                                rows="10"
+                                cols="50"
+                            />
                         </div>
                     </div>
                 </div>

@@ -36,6 +36,42 @@ function SidebarCPP() {
                 <li>
                     <Link to="/2_2cpp">Задание №2</Link>
                 </li>
+                <li>
+                    <Link to="/videocourseCPP2">Циклы for и while</Link>
+                </li>
+                <li>
+                    <Link to="/course_textC1">Циклы for и while - конспект</Link>
+                </li>
+                <li>
+                    <Link to="/2_1cpp">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2cpp">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/videocourseCPP2">Указатели и ссылки</Link>
+                </li>
+                <li>
+                    <Link to="/course_textC1">Указатели и ссылки - конспект</Link>
+                </li>
+                <li>
+                    <Link to="/2_1cpp">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2cpp">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/videocourseCPP2">Классы и объекты</Link>
+                </li>
+                <li>
+                    <Link to="/course_textC1">Классы и объекты - конспект</Link>
+                </li>
+                <li>
+                    <Link to="/2_1cpp">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2cpp">Задание №2</Link>
+                </li>
             </ul>
         </div>
     );

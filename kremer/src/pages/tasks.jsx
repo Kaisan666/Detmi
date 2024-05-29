@@ -43,7 +43,7 @@ const Tasks = () =>  {
                          <tr>
                          <td><Link to="/task1"> 1</Link></td>
                          <td>Большая и меньшая цифры числа</td>
-                         <td>10</td>
+                         <td>30</td>
                          <td>не приступал</td>
                      </tr>
                          <tr>

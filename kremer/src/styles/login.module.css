@@ -12,7 +12,13 @@ html{
  
 
   }
-  
+  .wrapppp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
   html, body {
     max-height: 100%;
     
@@ -148,7 +154,7 @@ html{
 .login-link {
     margin-top: -6px;
     font-size: 14px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
     color: #ff00c8;
 }
 

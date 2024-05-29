@@ -6,7 +6,7 @@ const {User, Leaderboard, Course, Task,  Usertask } = require('../models/models'
 const sequelize = require('../db')
 class taskController {
     async giveAnswer(req, res, next) {
-        const USERID = req.user.id;
+        const USERID = 2
         try {
             const langId = parseInt(req.params.langId, 10);
             const taskId = parseInt(req.params.taskId, 10);
@@ -122,7 +122,7 @@ class taskController {
                                 WHERE userId = ${USERID} AND taskId = ${taskId};
                             `);
                             return res.json({
-                                message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, вы получили ${ratingfortask} рейтинга.`,
+                                message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, вы получили ${ratingfortask} рейтинга.  входные данные ${stringInput}`,
                                 completed: "yes",
                                 rating: ratingfortask
                             });
@@ -133,7 +133,109 @@ class taskController {
                                 WHERE userId = ${USERID} AND taskId = ${taskId};
                             `);
                             return res.json({
-                                message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена неверно.`,
+                                message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена неверно.   входные данные ${stringInput}`,
+                                completed: "no"
+                            });
+                        }
+                    } catch (error) {
+                        console.error(`Error while fetching submission result: ${error}`);
+                        return res.status(500).json({ message: 'Error while fetching submission result' });
+                    }
+                }, 5000); // ожидание 5 секунд
+            } catch (error) {
+                console.error(`Error during POST request to Judge0 API: ${error}`);
+                return res.status(500).json({ message: 'Error during POST request to Judge0 API' });
+            }
+        } catch (error) {
+            console.error(`Error while processing the answer: ${error}`);
+            return res.status(500).json({ message: 'Error while processing the answer' });
+        }
+    }
+    async justtask(req, res, next) {
+        // const USERID = 8
+        try {
+            const langId = parseInt(req.params.langId, 10);
+            console.log(`langId: ${langId}`);
+            const input = req.body.input;
+            const output = req.body.output;
+            const code = req.body.code;
+            const sdout = Buffer.from(output, 'utf-8').toString('base64');
+
+            // Настройки для запроса к Judge0 API
+            const optionsForPost = {
+                method: 'POST',
+                url: 'https://judge0-ce.p.rapidapi.com/submissions',
+                params: {
+                    base64_encoded: 'true',
+                    fields: '*'
+                },
+                headers: {
+                    'content-type': 'application/json',
+                    'X-RapidAPI-Key': '5df980e790mshb0b51e43c2f1903p1fd09djsn584c6e29dc67',
+                    'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
+                },
+                data: {
+                    language_id: langId,
+                    source_code: code,
+                    stdin: input
+                }
+            };
+
+            try {
+                const responseFromPost = await axios.request(optionsForPost);
+                console.log(`Response from POST: ${JSON.stringify(responseFromPost.data)}`);
+                const token = responseFromPost.data.token;
+
+                // Настройки для запроса получения результата
+                const optionsForGet = {
+                    method: 'GET',
+                    url: `https://judge0-ce.p.rapidapi.com/submissions/${token}`,
+                    params: {
+                        base64_encoded: 'true',
+                        fields: '*'
+                    },
+                    headers: {
+                        'X-RapidAPI-Key': '5df980e790mshb0b51e43c2f1903p1fd09djsn584c6e29dc67',
+                        'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
+                    }
+                };
+
+                setTimeout(async () => {
+                    try {
+                        const responseFromGet = await axios.request(optionsForGet);
+                        console.log(`Response from GET: ${JSON.stringify(responseFromGet.data)}`);
+                        const { stdout: outputFromGet, stderr: errorFromGet } = responseFromGet.data;
+                        console.log(`outputFromGet ${outputFromGet}, errorFromGet ${errorFromGet}`);
+    
+                        let decodedOutputFromGet;
+                        let decodedErrorFromGet;
+    
+                        if (outputFromGet) {
+                            decodedOutputFromGet = Buffer.from(outputFromGet, 'base64').toString('utf-8').trim();
+                        } else {
+                            decodedOutputFromGet = '';
+                        }
+    
+                        if (errorFromGet) {
+                            decodedErrorFromGet = Buffer.from(errorFromGet, 'base64').toString('utf-8').trim();
+                        } else {
+                            decodedErrorFromGet = '';
+                        }
+    
+                        if (decodedErrorFromGet) {
+                            console.log(`Error from GET: ${decodedErrorFromGet}`);
+                            return res.json({ result: decodedErrorFromGet });
+                        }
+    
+                        
+                        if (decodedOutputFromGet.trim() == output) {
+                            return res.json({
+                                message: `Ожидаемый ответ: ${output}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, входные данные ${Buffer.from(input, 'base64').toString('utf-8')}`,
+                                completed: "yes"
+                            });
+                        } else {
+                            return res.json({
+                                message: `Ожидаемый ответ: ${output}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена неверно. входные данные ${Buffer.from(input, 'base64').toString('utf-8')}`,
                                 completed: "no"
                             });
                         }

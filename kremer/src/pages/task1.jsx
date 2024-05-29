@@ -5,18 +5,22 @@ import Footer from "../components/footer/footer";
 // import styles from "../styles/python/tasks.module.css";
 import styles from "../styles/stylesFortsk.module.css";
 import { Link } from 'react-router-dom';
+import { Sendcode } from '../compilator';
 function Task1(){
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
-
-    const handleChange = (event) => {
-        setCode(event.target.value);
-    };
+    const langid = 71;
+    const taskid = 1
+    const send = async () => {
+        const response = await Sendcode(code, langid, taskid)
+        console.log(response)
+        setResult(response)
+    }
 
     const handleSubmit = () => {
         // Ваша логика для компиляции и выполнения кода здесь
         // Предположим, что результат компиляции или выполнения будет записан в переменную result
-        setResult(`С входными данными "15", ваш ответ: 1, 5. Задача решена верно!`);
+        setResult(`Задача решена верно!`);
     };
 
     return (
@@ -29,25 +33,28 @@ function Task1(){
                     <h1>Задача №1</h1>
                     <p>
         
-                                          Организовать ввод двухзначного натурального числа с клавиатуры.
+                                          С клавиатуры вводятся два челых числа
                     </p>
-                    <p> Программа должна определить наименьшую и наибольшую цифры, которые входят в состав данного натурального числа.</p>
+                    <p> Программа должна определить наименьшую и наибольшую цифры, которые входят в состав данного натурального числа и сначала вывести большу, а потом меньшую</p>
                 </div>
                 <div className={styles.compiler}>
                     <h2></h2>
                     <textarea
-                    
-
                         className={styles.codeInput}
                         placeholder="Введите ваш код здесь..."
                         value={code}
-                        onChange={handleChange}>
+                        onChange={e => setCode(e.target.value)}>
                     </textarea>
                     <div>
-                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <button className={styles.compileButton} onClick={send}>Выполнить</button>
                         <div className={styles.result}>
                             <h3>Результат:</h3>
-                            <p>{result}</p>
+                            <textarea
+                                value={result}
+                                readOnly
+                                rows="10"
+                                cols="50"
+                            />
                         </div>
                     </div>
                 </div>

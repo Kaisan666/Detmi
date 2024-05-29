@@ -3,7 +3,13 @@
     font-weight: 100;
     font-style: normal;
   }
-  
+  .exit{
+    /* margin-left: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
   .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -166,6 +172,7 @@
   
   
     .menu__list{
+      /* margin-left: 50px; */
       display: flex;
       gap: 15.63vw; 
       padding-right: 50px;
