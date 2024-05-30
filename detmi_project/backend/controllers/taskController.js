@@ -116,13 +116,8 @@ class taskController {
                                 SET status = 'Решено'
                                 WHERE userId = ${USERID} AND taskId = ${taskId};
                             `);
-<<<<<<< HEAD
-                            return res.json({git log
-                                message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, вы получили ${ratingfortask} рейтинга.`,
-=======
                             return res.json({
                                 message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, вы получили ${ratingfortask} рейтинга.  входные данные ${stringInput}`,
->>>>>>> d0e7684915b855ea9c76189d03882ba2d9ce084d
                                 completed: "yes",
                                 rating: ratingfortask
                             });
