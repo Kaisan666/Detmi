@@ -1,5 +1,4 @@
 import styles from "../styles/registration.module.css"; // Импорт файла со стилями
-
 import User1_img from "../images/user1.png";
 import Detmi_img from "../images/Detmi.png";
 import axios from 'axios';

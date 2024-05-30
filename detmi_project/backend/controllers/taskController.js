@@ -12,7 +12,6 @@ class taskController {
             const taskId = parseInt(req.params.taskId, 10);
             console.log(`UserID: ${USERID}, langId: ${langId}, taskId: ${taskId}`);
 
-            // Получение задачи из базы данных
             const task = await Task.findOne({
                 where: { id: taskId },
                 attributes: ["title", "text", "rating", "inputOutputId"]
@@ -36,14 +35,12 @@ class taskController {
             const { title, text, rating: ratingfortask} = task;
             console.log(`Task: ${JSON.stringify(task)}`);
 
-            // Код из запроса
             const code = req.body.code;
             console.log(`Code: ${code}`);
             console.log(`inputs: ${inputs}`);
             const sdin = Buffer.from(stringInput, 'utf-8').toString('base64');
             const sdout = Buffer.from(stringOutput, 'utf-8').toString('base64');
 
-            // Настройки для запроса к Judge0 API
             const optionsForPost = {
                 method: 'POST',
                 url: 'https://judge0-ce.p.rapidapi.com/submissions',
@@ -67,8 +64,6 @@ class taskController {
                 const responseFromPost = await axios.request(optionsForPost);
                 console.log(`Response from POST: ${JSON.stringify(responseFromPost.data)}`);
                 const token = responseFromPost.data.token;
-
-                // Настройки для запроса получения результата
                 const optionsForGet = {
                     method: 'GET',
                     url: `https://judge0-ce.p.rapidapi.com/submissions/${token}`,
@@ -121,7 +116,7 @@ class taskController {
                                 SET status = 'Решено'
                                 WHERE userId = ${USERID} AND taskId = ${taskId};
                             `);
-                            return res.json({
+                            return res.json({git log
                                 message: `Ожидаемый ответ: ${outputs}, Ваш ответ: ${decodedOutputFromGet.trim()}. Задача решена верно, вы получили ${ratingfortask} рейтинга.`,
                                 completed: "yes",
                                 rating: ratingfortask
@@ -141,7 +136,7 @@ class taskController {
                         console.error(`Error while fetching submission result: ${error}`);
                         return res.status(500).json({ message: 'Error while fetching submission result' });
                     }
-                }, 5000); // ожидание 5 секунд
+                }, 5000); 
             } catch (error) {
                 console.error(`Error during POST request to Judge0 API: ${error}`);
                 return res.status(500).json({ message: 'Error during POST request to Judge0 API' });
@@ -152,29 +147,7 @@ class taskController {
         }
     }
 
-//     async getAllTasks(req, res, next) {
-//         const USERID = req.user.id;
-//         try {
-//             const [allTasks] = await sequelize.query(`
-//                 SELECT 
-//                     tasks.id, 
-//                     tasks.title, 
-//                     tasks.rating, 
-//                     usertasks.status
-//                 FROM 
-//                     tasks
-//                 JOIN 
-//                     usertasks ON tasks.id = usertasks.taskId
-//                 WHERE 
-//                     usertasks.userId = ${USERID};
-//             `);
-//             return res.json(allTasks);
-//         } catch (error) {
-//             console.error(error);
-//             return res.status(500).json({ message: 'Error while fetching all tasks' });
-//         }
-//     }
-// }
+
 
     async getAllTasks(req, res){
         const USERID = req.user.id;
@@ -191,7 +164,7 @@ class taskController {
 
     async getOneTask(req, res) {
         try {
-            const USERID = req.user.id; // Хотя USERID не используется в этом методе, возможно, он нужен для других целей
+            const USERID = req.user.id; 
             const taskId = parseInt(req.params.taskId, 10);
     
             console.log(`Fetching task with ID: ${taskId} for user: ${USERID}`);

@@ -2,7 +2,6 @@ const { where, json } = require("sequelize");
 const {User, Course, Users_of_course} = require("../models/models");
 const sequelize = require("../db");
 
-
 class User_of_courseController {
     async enter(req, res){
         try {
@@ -26,21 +25,16 @@ class User_of_courseController {
                 courseId : CourseId,
             }
         })
-        // const student = await sequelize.query("Select * from Users_of_courses")
         const course = await Course.findOne({
             where: { id: CourseId }
         });
         const coursename = course.course
         if (student) {
-            // return res.json({message : "j"})
-            
             console.log(req.params, req.body, req.user)
-            // res.json({message : "You already in course"})
-            // return res.redirect(`/${coursename}`)
+
             return res.json({message : "You already in course"})
         }
         else {
-            // return res.json({message : course.course})
             return res.json({message : "Ok", courseid : CourseId, name: coursename})
         }}
         catch (error){

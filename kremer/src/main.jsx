@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ReactDOM from 'react-dom'
 import{
   createBrowserRouter,
@@ -17,18 +16,15 @@ import VideocoursePY from './pages/python/lesson1/videocoursePY.jsx';
 import VideocourseJS from './pages/js/lesson1/videocourseJS.jsx';
 import VideocourseJS1 from './pages/js/lesson1/videocourseJS1.jsx';
 import VideocourseJS2 from './pages/js/lesson2/videocourseJS2.jsx';
-//import VideocoursePY1 from './pages/python/videocoursePY1.jsx';
 import VideocoursePY1 from './pages/python/lesson1/videocoursePY1.jsx';
 import VideocoursePY2 from './pages/python/lesson2/videocoursePY2.jsx';
 import Course_textPY from './pages/python/lesson1/course_textPY.jsx';
 import VideocourseC from './pages/cpp/lesson1/videocourseC++.jsx';
 import VideocourseC1 from './pages/cpp/lesson1/videocourseC++1.jsx';
 import Course_textJS1 from './pages/js/lesson1/course_textJS1.jsx';
-
 import VideocourseC2 from './pages/cpp/lesson2/videocourseC++2.jsx';
 import Course_textC from './pages/cpp/lesson1/course_textC.jsx';
 import Course_textC1 from './pages/cpp/lesson2/course_textC1.jsx';
-
 import Course_textPY1 from './pages/python/lesson2/course_textPY1.jsx';
 import Course_textJS2 from './pages/js/lesson2/course_textJS2.jsx';
 import Python1_1 from './pages/python/tasks/1_1py.jsx';
