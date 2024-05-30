@@ -2,10 +2,25 @@ import styles from '../../styles/headers/header.module.css';
 import Logo_img from '../../images/Detmi.png';
 import user_img from "../../images/user.png";
 import React from 'react';
+import {useState, useEffect, } from "react"
+import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import {Link} from 'react-router-dom'
 import Logout from '../../../logout';
 export default function Header() {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            setIsAuthenticated(true);
+        } else {
+            setIsAuthenticated(false);
+            // Если хотите перенаправить неаутентифицированных пользователей:
+            // navigate('/login');
+        }
+    }, [navigate]);
     return (
         <header className={styles.header}>
             <div className={styles.container0}>
@@ -29,7 +44,11 @@ export default function Header() {
                         </ul>
                     </nav>
                         <span className={styles.exit}>
-                            <Logout/>
+                            {isAuthenticated ? (
+                                <Logout/>): (
+                                    <Link to="/registration">Зарегистрироваться</Link>
+                                )
+                            }
                             <NavLink to="/personal_account" className={styles.user}>
                     <img className={styles['user__img']} src={user_img} alt="User" />
                 </NavLink>
@@ -37,5 +56,6 @@ export default function Header() {
                 </div>
             </div>
         </header>
-    );
+    ); 
+
 }

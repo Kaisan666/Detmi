@@ -19,7 +19,7 @@ const Logout = () => {
 
     const handleLogout = () => {
         window.localStorage.removeItem('token');
-        navigate('/login');
+        window.location.reload()
     };
 
     return (

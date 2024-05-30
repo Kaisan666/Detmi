@@ -219,7 +219,7 @@ class taskController {
     
                         if (decodedErrorFromGet) {
                             console.log(`Error from GET: ${decodedErrorFromGet}`);
-                            return res.json({ result: decodedErrorFromGet });
+                            return res.json({ message: decodedErrorFromGet });
                         }
     
                         

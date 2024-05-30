@@ -10,7 +10,7 @@ class LeaderboardController {
           attributes: ['nickname']
         }],
         order: [['rating', 'DESC']],
-        limit: 5
+        limit: 10
       });
 
       return res.json({ leaders });
