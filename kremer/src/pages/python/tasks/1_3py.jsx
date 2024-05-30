@@ -4,32 +4,31 @@ import Header from "../../../components/headers/headerPython";
 import Footer from "../../../components/footer/footerPY";
 import { Link } from 'react-router-dom';
 import Sidebar from '../../sidebar';
+import { sendTask } from '../../../compilator';
 function Python1_3(){
+    const input = "1 2"
+    const output = "3"
+    const langid = 71
     const [code, setCode] = useState('');
     const [result, setResult] = useState('');
-
-    const handleChange = (event) => {
-        setCode(event.target.value);
-    };
-
-    const handleSubmit = () => {
-        // Ваша логика для компиляции и выполнения кода здесь
-        // Предположим, что результат компиляции или выполнения будет записан в переменную result
-        setResult('Результат выполнения вашего кода здесь...');
-    };
+    const send = async () => {
+        const response = await sendTask(input, output, code, langid)
+        console.log(response)
+        setResult(response)
+    }
 
     return (
         <div className={styles.container}>
             <Header />
             <div className={styles.Allwrapper}>
             <Sidebar />
-            <div class="sec-widget" data-widget="e5b40b2c4700fa274dfd0b5749e6fa98"></div>
+            {/* <div class="sec-widget" data-widget="e5b40b2c4700fa274dfd0b5749e6fa98"></div> */}
             <div className={styles.content}>
                 <div className={styles.task}>
                     <h1>Задача №3</h1>
                     <p>
         
-                        Напишите программу, которая будет считать сумму всех чисел от 1 до n, где n - целое положительное число.
+                        Напишите программу, которая будет считать сумму двух чисел введенных с клавиатуры.
                     </p>
                 </div>
                 <div className={styles.compiler}>
@@ -40,13 +39,18 @@ function Python1_3(){
                         className={styles.codeInput}
                         placeholder="Введите ваш код здесь..."
                         value={code}
-                        onChange={handleChange}>
+                        onChange={e => setCode(e.target.value)}>
                     </textarea>
                     <div>
-                        <button className={styles.compileButton} onClick={handleSubmit}>Выполнить</button>
+                        <button className={styles.compileButton} onClick={send}>Выполнить</button>
                         <div className={styles.result}>
                             <h3>Результат:</h3>
-                            <p>{result}</p>
+                            <textarea
+                                value={result}
+                                readOnly
+                                rows="10"
+                                cols="50"
+                            />
                         </div>
                     </div>
                 </div>

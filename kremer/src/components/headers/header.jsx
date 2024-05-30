@@ -3,7 +3,8 @@ import Logo_img from '../../images/Detmi.png';
 import user_img from "../../images/user.png";
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import {Link} from 'react-router-dom'
+import Logout from '../../../logout';
 export default function Header() {
     return (
         <header className={styles.header}>
@@ -27,9 +28,12 @@ export default function Header() {
                             </li>
                         </ul>
                     </nav>
-                    <NavLink to="/personal_account" className={styles.user}>
-            <img className={styles['user__img']} src={user_img} alt="User" />
-        </NavLink>
+                        <span className={styles.exit}>
+                            <Logout/>
+                            <NavLink to="/personal_account" className={styles.user}>
+                    <img className={styles['user__img']} src={user_img} alt="User" />
+                </NavLink>
+                        </span>
                 </div>
             </div>
         </header>

@@ -46,9 +46,19 @@ import CPP1_2 from './pages/cpp/tasks/1_2cpp.jsx';
 import CPP2_1 from './pages/cpp/tasks/2_1cpp.jsx';
 import CPP2_2 from './pages/cpp/tasks/2_2cpp.jsx';
 import UserProfile from './pages/personal_account.jsx';
+import Task1 from './pages/task1.jsx';
+import Login from './pages/login.jsx';
 const router = createBrowserRouter([
   {path : "/",
   element : <MainPage/>
+  },
+{
+  path : "/login",
+  element: <Login/>
+},
+
+  {path : "tasks/:taskId",
+    element : <Task1/>
   },
   {path : "leaderboard",
     element : <Leaders/>

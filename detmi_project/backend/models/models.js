@@ -47,8 +47,8 @@ const Task = sequelize.define('task',{
 const inputoutput = sequelize.define('inputoutput',
 {
     id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
-    input : {type : DataTypes.INTEGER, allowNull: false},
-    output :{type : DataTypes.INTEGER, allowNull: false}
+    input : {type : DataTypes.STRING, allowNull: false},
+    output :{type : DataTypes.STRING, allowNull: false}
 })
 // const TaskInput_Output = sequelize.define('TaskInput_Output', {
 //     id : {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true}

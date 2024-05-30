@@ -42,6 +42,54 @@ function Sidebar() {
                 <li>
                     <Link to="/2_3py">Задание №3</Link>
                 </li>
+                <li>
+                    <Link to="/2_3py">Параметры sep и end</Link>
+                </li>
+                <li>
+                    <Link to="/2_1py">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2py">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Задание №3</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Цикл for</Link>
+                </li>
+                <li>
+                    <Link to="/2_1py">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2py">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Задание №3</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Цикл while</Link>
+                </li>
+                <li>
+                    <Link to="/2_1py">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2py">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Задание №3</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Break, continue и else</Link>
+                </li>
+                <li>
+                    <Link to="/2_1py">Задание №1</Link>
+                </li>
+                <li>
+                    <Link to="/2_2py">Задание №2</Link>
+                </li>
+                <li>
+                    <Link to="/2_3py">Задание №3</Link>
+                </li>
             </ul>
         </div>
     );
