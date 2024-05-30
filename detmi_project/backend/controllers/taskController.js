@@ -6,7 +6,7 @@ const {User, Leaderboard, Course, Task,  Usertask } = require('../models/models'
 const sequelize = require('../db')
 class taskController {
     async giveAnswer(req, res, next) {
-        const USERID = 2
+        const USERID = req.user.id;
         try {
             const langId = parseInt(req.params.langId, 10);
             const taskId = parseInt(req.params.taskId, 10);
@@ -106,7 +106,7 @@ class taskController {
     
                         if (decodedErrorFromGet) {
                             console.log(`Error from GET: ${decodedErrorFromGet}`);
-                            return res.json({ result: decodedErrorFromGet });
+                            return res.json({ message: decodedErrorFromGet });
                         }
     
                         
@@ -280,15 +280,27 @@ class taskController {
 
     async getAllTasks(req, res){
         const USERID = req.user.id;
-        const [tasks, metadata] = await sequelize.query(`SELECT 
-        tasks.id, 
-        tasks.title, 
-        tasks.rating,
-        tasks.url
-        FROM tasks`)
-        
-        return res.json({tasks})
+        console.log(USERID)
+    try {
+        const tasks = await sequelize.query(
+            `SELECT 
+                tasks.id, 
+                tasks.title, 
+                tasks.rating,
+                usertasks.status
+            FROM tasks
+            LEFT JOIN usertasks ON tasks.id = usertasks.taskId
+            WHERE usertasks.userId = :userId`, {
+                replacements: { userId: USERID },
+                type: sequelize.QueryTypes.SELECT
+            }
+        );
+        console.log(tasks)
+        return res.json({tasks});
+    } catch (error) {
+        return res.status(500).json({ message: "Ошибка при получении данных" });
     }
+}
     
 
     async getOneTask(req, res) {

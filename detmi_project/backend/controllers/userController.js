@@ -1,10 +1,10 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const ApiError = require('../erorr/ApiError')
-const {User, Personal_information, Leaderboard} = require("../models/models")
+const {User, Personal_information, Leaderboard, Usertask, Task} = require("../models/models")
 const { where } = require("sequelize")
 const { RelationshipType } = require('sequelize/lib/errors/database/foreign-key-constraint-error')
-
+const sequelize = require('../db')
 const generateJwt = (id, nickname, email) => {
     return jwt.sign(
         {id, nickname, email}, 
@@ -32,6 +32,15 @@ class UserController {
         const user = await User.create({nickname, email, password: hashPassword})
         const personal_information = await Personal_information.create({userId : user.id})
         const leaderboard = await Leaderboard.create({userId : user.id, rating : 0})
+        const tasks = await Task.findAll();
+
+        // Insert records into UserTask table
+        const userTasks = tasks.map(task => ({
+            userId: user.id,
+            taskId: task.id,
+            status: 'не приступал'
+        }));
+        await Usertask.bulkCreate(userTasks);
         const token = generateJwt(user.id, user.nickname, user.email )
         return res.json({token})
 

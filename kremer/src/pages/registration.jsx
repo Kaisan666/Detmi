@@ -28,7 +28,7 @@ const Registration = () => {
                 debugger;
                 console.log(response);
                 debugger;
-                localStorage.setItem('token', response.data.token);
+                window.localStorage.setItem('token', response.data.token);
                 navigate('/');
               }, (error) => {
                 debugger;
@@ -50,7 +50,7 @@ const Registration = () => {
               .then((response) => {
                 debugger;
                 console.log(response);
-                localStorage.setItem('token', response.data.token);
+                window.localStorage.setItem('token', response.data.token);
                 navigate('/');
               }, (error) => {
                 debugger;

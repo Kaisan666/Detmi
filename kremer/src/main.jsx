@@ -61,7 +61,7 @@ const router = createBrowserRouter([
   element: <Login/>
 },
 
-  {path : "task1",
+  {path : "tasks/:taskId",
     element : <Task1/>
   },
   {path : "leaderboard",
